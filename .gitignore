@@ -3,3 +3,7 @@ extracted/
 extracted-*/
 one.txt
 *.tmp
+.cache/
+_derived/
+_private/
+desktop.ini

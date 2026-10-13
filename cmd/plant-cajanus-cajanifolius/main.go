@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/KiriKirby/phytozome-go-p450phgo/internal/planttable"
-	"github.com/KiriKirby/phytozome-go-p450phgo/internal/plantxlsx"
+	"github.com/KiriKirby/cypgo/internal/planttable"
+	"github.com/KiriKirby/cypgo/internal/plantxlsx"
 )
 
 const sourceHash = "8974bf1f2cd5b439dac6c800dea9791882142ef12ac775d7cb58fa979aface2a"

@@ -3,7 +3,7 @@
 ## Plant rebuild authority
 
 - The immediate release target is the complete `plants` section from the Dr. Nelson plants page. Work through the page resources one at a time in page/manifest order.
-- Current checkpoint (2026-10-09): all 59 plant resources are complete in manifest order through Red Algae. Their reviewed resource totals are 18,172 records and 18,013 literal sequences. The plant release gate is satisfied; non-plant resources remain disabled until independently reviewed. User screenshots and literature tables are test fixtures only and are not PGD sources.
+- Current checkpoint (2026-10-13): all plant resources are complete in manifest order through Red Algae. The published PGD and generated audit contain 20,636 reviewed plant records across 70 species, including 19,897 literal sequences. The plant release gate is satisfied; non-plant resources remain disabled until independently reviewed. User screenshots and literature tables are test fixtures only and are not PGD sources.
 - Download and inspect every plant resource independently. A resource is not approved merely because it has been Office-normalized or mentioned in an audit document.
 - Do not publish plant records produced by a category-wide CYP regex scan, printable-byte scan, guessed delimiter, guessed FASTA boundary, or a generic "sequence-looking token" rule.
 - Every approved plant resource must have its own parser/profile implementation or a reviewed structured CSV whose columns and row relationships were checked against that exact source file.
@@ -18,7 +18,7 @@
 - Maintain a durable per-resource review under `docs/plants/` and a machine-readable plant completion ledger under `sources/`.
 - Each completed resource records: source file and URL, source hash, worksheets/sections inspected, exact parser/profile, total accepted records, records with sequence, missing-sequence count, duplicates/alternates, fragments/pseudogenes, foreign-species rows, and unresolved issues.
 - A plant species/resource is selectable only after its exact parser or reviewed CSV passes tests and its audit is marked complete. Unreviewed resources remain present but disabled.
-- The formal `p450phgo.pgd` plant records must be built only from completed resource-specific inputs. The legacy generic `parseExtracted` path must not contribute publishable plant records.
+- The formal `cypgo.pgd` plant records must be built only from completed resource-specific inputs. The legacy generic `parseExtracted` path must not contribute publishable plant records.
 - Tests must include representative first/middle/last records and every exceptional layout found in the source, plus sequence alphabet/length checks and record/sequence-count assertions.
 - After every completed resource, rebuild to a temporary PGD, inspect its records, and compare its counts and representative sequences with the source before marking the resource complete.
 

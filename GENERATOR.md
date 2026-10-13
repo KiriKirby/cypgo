@@ -3,7 +3,7 @@
 Run from this directory:
 
 ```text
-go run ./cmd/build -out p450phgo.pgd
+go run ./cmd/build -out cypgo.pgd
 ```
 
 The release generator writes only reviewed structured source CSV files into the runtime bbolt schema described in `DATA_SCHEMA.md`. Plant resources are downloaded, inspected, and converted one resource at a time by a dedicated command or a manually reviewed CSV. The legacy normalized-text scanner remains only as comparison code and cannot contribute records to a published PGD.

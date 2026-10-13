@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/KiriKirby/phytozome-go-p450phgo/internal/plantxlsx"
+	"github.com/KiriKirby/cypgo/internal/plantxlsx"
 )
 
 type spec struct {

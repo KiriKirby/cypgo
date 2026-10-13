@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/KiriKirby/phytozome-go-p450phgo/internal/plantxlsx"
+	"github.com/KiriKirby/cypgo/internal/plantxlsx"
 )
 
 func TestAmborellaWorkbook(t *testing.T) {

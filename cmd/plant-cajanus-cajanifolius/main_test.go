@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/KiriKirby/phytozome-go-p450phgo/internal/plantxlsx"
+	"github.com/KiriKirby/cypgo/internal/plantxlsx"
 )
 
 func TestReviewUsesExactCajanusBoundariesAndIDs(t *testing.T) {

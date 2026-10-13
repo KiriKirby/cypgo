@@ -43,7 +43,7 @@ var bracketSpeciesRE = regexp.MustCompile(`\[([^\]]{3,120})\]`)
 var speciesShapeRE = regexp.MustCompile(`^(?:[A-Z][a-z]+|[a-z][a-z]+)\s+(?:[a-z][A-Za-z-]+|sp\.?|cf\.?|aff\.?)\b`)
 
 func main() {
-	out := flag.String("out", "p450phgo.pgd", "output PGD path")
+	out := flag.String("out", "cypgo.pgd", "output PGD path")
 	sources := flag.String("sources", "sources", "reviewed structured source directory")
 	docs := flag.String("species-docs", "docs/species", "generated per-species audit documentation")
 	resources := flag.String("resource-index", "sources/resources.csv", "resource manifest CSV")

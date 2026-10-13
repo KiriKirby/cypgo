@@ -1,4 +1,4 @@
-module github.com/KiriKirby/phytozome-go-p450phgo
+module github.com/KiriKirby/cypgo
 
 go 1.23
 
