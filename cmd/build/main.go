@@ -405,7 +405,13 @@ func writeResourceAuditDocs(manifestPath, root string, records []record) error {
 				}
 			}
 		}
-		body := fmt.Sprintf("# Resource audit: %s\n\n- Category: `%s`\n- Resource: `%s`\n- URL: %s\n- Parser status: `resource-specific normalized-text audit`\n- PGD records: `%d`\n- Records with verified sequence: `%d`\n\nParsing rule: FASTA blocks are recognized from `>` headers and wrapped lines; structured tables may provide sequence only from an explicit `sequence` column. Unlabeled tokens, alignment fragments, scores, and comments are not accepted as sequences. This record documents the exact resource-level extraction result; unresolved or ambiguous records remain searchable with an empty sequence.\n", label, cat, local, source, recordCount, sequenceCount)
+		parserStatus := "resource-specific normalized-text audit"
+		rule := "Parsing rule: FASTA blocks are recognized from `>` headers and wrapped lines; structured tables may provide sequence only from an explicit `sequence` column. Unlabeled tokens, alignment fragments, scores, and comments are not accepted as sequences. This record documents the exact resource-level extraction result; unresolved or ambiguous records remain searchable with an empty sequence."
+		if local == "plants-rice_annotation.P450.xls" {
+			parserStatus = "resource-specific BIFF8 workbook audit"
+			rule = "Workbook rule: Sheet1 header row 6 and rows 7-418 are parsed by cmd/plant-rice-annotation; Sheet2 and Sheet3 are empty. The workbook has no literal protein sequence column, so all 412 accepted rows retain an empty sequence. SHA-256: 3532c8470d07188dc00d5135caa7772af80429d9b5ea471a2bb3ac25214a91c1."
+		}
+		body := fmt.Sprintf("# Resource audit: %s\n\n- Category: `%s`\n- Resource: `%s`\n- URL: %s\n- Parser status: `%s`\n- PGD records: `%d`\n- Records with verified sequence: `%d`\n\n%s\n", label, cat, local, source, parserStatus, recordCount, sequenceCount, rule)
 		if err := os.WriteFile(filepath.Join(root, slug+".md"), []byte(body), 0o644); err != nil {
 			return err
 		}

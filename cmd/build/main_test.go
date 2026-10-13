@@ -63,6 +63,7 @@ func TestReviewedPlantResourceCountsAndRepresentativeSequences(t *testing.T) {
 		"Vitis vinifera":        {672, 672},
 		"Nelumbo nucifera":      {364, 364},
 		"Aquilegia coerulea":    {1023, 1023},
+		"Oryza sativa":          {427, 15},
 	}
 	for species, expected := range want {
 		if got[species] != expected {
@@ -74,8 +75,8 @@ func TestReviewedPlantResourceCountsAndRepresentativeSequences(t *testing.T) {
 		totalRecords += value.records
 		totalSequences += value.sequences
 	}
-	if totalRecords != 20636 || totalSequences != 19897 {
-		t.Fatalf("reviewed plant totals=%d records/%d sequences, want 20636/19897", totalRecords, totalSequences)
+	if totalRecords != 21048 || totalSequences != 19897 {
+		t.Fatalf("reviewed plant totals=%d records/%d sequences, want 21048/19897", totalRecords, totalSequences)
 	}
 	checks := map[string]struct {
 		id, symbol, prefix, suffix string
