@@ -74,6 +74,15 @@ func TestGeneratePlantStaticSearch(t *testing.T) {
 	if !strings.Contains(string(detail), `\u003c`) || !strings.Contains(string(detail), "MPEPTIDE") {
 		t.Fatalf("detail data is missing escaped/full content: %s", detail)
 	}
+	if !strings.Contains(string(detail), "phgoLite") || !strings.Contains(string(detail), `\u003eTest_plant|gene-1(CYP71A1)`) {
+		t.Fatalf("detail data is missing PHgo Lite header: %s", detail)
+	}
+}
+
+func TestPhgoLiteHeaderSanitizesFieldsAndOmitsEmptySymbol(t *testing.T) {
+	if got := phgoLiteHeader("Test plant", "gene (1)", "~"); got != ">Test_plant|gene__1_" {
+		t.Fatalf("header=%q", got)
+	}
 }
 
 func TestSpeciesSlugIsStableAndCollisionResistant(t *testing.T) {

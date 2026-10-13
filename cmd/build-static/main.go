@@ -43,6 +43,7 @@ type detailRecord struct {
 	Species     string `json:"species"`
 	Description string `json:"description"`
 	Sequence    string `json:"sequence"`
+	PhgoLite    string `json:"phgoLite"`
 	SourceURL   string `json:"sourceUrl"`
 }
 
@@ -138,7 +139,7 @@ func generate(dbPath, outRoot string) (manifest, error) {
 			bySpecies[species] = append(bySpecies[species], detailRecord{
 				DetailID: detailID, CYPName: name, ID: r.ID, RecordKey: r.RecordKey,
 				Category: r.Category, Species: r.Species, Description: r.Description,
-				Sequence: r.Sequence, SourceURL: r.SourceURL,
+				Sequence: r.Sequence, PhgoLite: phgoLiteHeader(species, r.ID, r.Symbol), SourceURL: r.SourceURL,
 			})
 			searchRows = append(searchRows, []any{detailID, name, species, shard, offset})
 			return nil
@@ -187,6 +188,33 @@ func generate(dbPath, outRoot string) (manifest, error) {
 		return result, err
 	}
 	return result, nil
+}
+
+func phgoLiteHeader(species, id, symbol string) string {
+	species = sanitizeLitePart(species)
+	id = sanitizeLitePart(id)
+	if species == "" {
+		species = "~"
+	}
+	if id == "" {
+		id = "~"
+	}
+	header := ">" + species + "|" + id
+	symbol = strings.TrimSpace(symbol)
+	if symbol == "" || symbol == "~" || symbol == "~~" {
+		return header
+	}
+	symbol = sanitizeLitePart(symbol)
+	if symbol == "" || symbol == "~" || symbol == "~~" {
+		return header
+	}
+	return header + "(" + symbol + ")"
+}
+
+func sanitizeLitePart(value string) string {
+	value = strings.TrimSpace(value)
+	value = strings.Join(strings.Fields(value), "_")
+	return strings.NewReplacer("|", "_", "(", "_", ")", "_").Replace(value)
 }
 
 func speciesSlug(species string) string {

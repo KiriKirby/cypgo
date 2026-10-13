@@ -26,7 +26,7 @@ The existing `index.html` and `detailtmp.html` files are the visual templates. T
 
 Search rows contain only the detail ID, displayed CYP name, species, detail shard, and the row offset inside that shard. The detail page therefore loads one species shard on demand instead of downloading every protein sequence on the home page.
 
-The detail page reserves rows for every runtime database field: CYP Name, ID, Record Key, Category, Species, Description, Protein Sequence, and Source URL. Missing values leave their row empty. Its browser title and visible heading append the current CYP name.
+The detail page reserves rows for every runtime database field: CYP Name, ID, Record Key, Category, Species, Description, PHgo Lite FASTA, and Source URL. The FASTA row uses the compact `>species|ID(symbol)` header format; fields are whitespace-normalized and separator-safe, and the symbol suffix is omitted when empty. Missing values leave their row empty. Its browser title and visible heading append the current CYP name.
 
 ## Layout and wrapping rules
 
