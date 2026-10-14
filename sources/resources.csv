@@ -109,6 +109,8 @@
 "plants","rice phylogenomics protein","https://ricephylogenomics.ucdavis.edu/p450/download/RP450Protein.txt","plants-ricephylogenomics-RP450Protein.txt","fasta","plant-ricephylogenomics","reviewed"
 "plants","rice phylogenomics cDNA","https://ricephylogenomics.ucdavis.edu/p450/download/RP450cDNA.txt","plants-ricephylogenomics-RP450cDNA.txt","fasta","companion-source","reviewed"
 "plants","rice phylogenomics genomic","https://ricephylogenomics.ucdavis.edu/p450/download/RP450Genomic.txt","plants-ricephylogenomics-RP450Genomic.txt","fasta","companion-source","reviewed"
+"plants","RAP-DB IRGSP-1.0 representative annotation 2026-02-05","https://rapdb.dna.naro.go.jp/download/archive/irgsp1/IRGSP-1.0_representative_annotation_2026-02-05.tsv.gz","plants-rapdb-IRGSP-1.0_representative_annotation_2026-02-05.tsv.gz","tsv.gz","auxiliary-source","reviewed"
+"plants","RAP-DB IRGSP-1.0 protein 2026-02-05","https://rapdb.dna.naro.go.jp/download/archive/irgsp1/IRGSP-1.0_protein_2026-02-05.fasta.gz","plants-rapdb-IRGSP-1.0_protein_2026-02-05.fasta.gz","fasta.gz","auxiliary-source","reviewed"
 "plants","Citrus clementina (Clementine mandarin) CYP71","https://drnelson.uthsc.edu/C.clementina.71clan.htm","plants-C.clementina.71clan.htm","html","resource-specific-review","reviewed"
 "plants","Citrus clementina (Clementine mandarin) other clans","https://drnelson.uthsc.edu/C.clementina.other.htm","plants-C.clementina.other.htm","html","resource-specific-review","reviewed"
 "plants","Citrus sinensis (sweet orange) CYP71","https://drnelson.uthsc.edu/C_sinensis.71clan.htm","plants-C_sinensis.71clan.htm","html","resource-specific-review","reviewed"
