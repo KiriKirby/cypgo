@@ -2,12 +2,12 @@
 
 This summary is generated only from completed resource-specific structured inputs. Listed but unfinished resources remain disabled and do not contribute records. No external sequence database is consulted.
 
-Listed species/resource entries: 179
+Listed species/resource entries: 182
 
 | Category | Reviewed PGD records | Literal source sequences |
 |---|---:|---:|
 | animals | 0 | 0 |
-| plants | 21048 | 19897 |
+| plants | 21389 | 20238 |
 | fungi | 0 | 0 |
 | bacteria | 0 | 0 |
 

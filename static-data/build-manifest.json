@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "source_sha256": "13aa41290924c55cfe4a9acda7fdf020c9232f71130dd9773bfc5840f6416763",
-  "plant_records": 21048,
+  "source_sha256": "ee44d879d434100da5994002223bf8ccbc213c4b825cc99c02c5a5fa5f61b38a",
+  "plant_records": 21389,
   "plant_species": 70,
   "detail_shards": 70,
-  "generated_at_utc": "2026-10-13T10:43:06Z"
+  "generated_at_utc": "2026-10-14T05:28:05Z"
 }
