@@ -4,15 +4,15 @@ Category: `plants`
 
 Records: 763
 
-Sequence audit: `762/763` records have an accepted sequence; short records (<100 aa): `3`; unusually long records (>1000 aa): `0`.
+Sequence audit: `763/763` records have an accepted sequence; short records (<100 aa): `3`; unusually long records (>1000 aa): `0`.
 
-Extraction method(s): `explicit sequence column`.
+Extraction method(s): `explicit sequence column; reviewed structured record`.
 
 A missing sequence means the current Dr. Nelson resource did not provide an unambiguous protein sequence for this exact record. No external database sequence is substituted.
 
 | CYP / ID | Sequence | Description | Source |
 |---|---|---|---|
-| CYP84A | missing | biblioD.html historical bibliography block 3622 at source line 21331; source species text=Eucalyptus grandis (Myrtales); CYP84A Eucalyptus grandis (Myrtales) / EW688240.1 81% to 84A1 C-term / HIIDDHMDKKRNKTSSGGGDQDVDTDMVDDLLAFYSDEAKVNESDDLQNSIRLTRDNIKA / IIMDVMFGGTETVASAIEWAMAELMRSPEDLKKVQQELADVVGLDRRVEESDFEKLTYLK / CCLKETLRLHPPIPLLLHETAEDAVISGYRIPARSRVMINAWAIGRDPGSWTEPDKFKPS / RFLEPGMPDYKGSNFEFIPFGSGRRSCPGMQLGLYALDMAVAHLLHCFTWELPDGMKPSE / MDMGDVFGLTAPRSTRLVAVPTPRLVGALY* | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP84A | present (270 aa) | biblioD.html historical bibliography block 3622 at source line 21331; source species text=Eucalyptus grandis (Myrtales); CYP84A Eucalyptus grandis (Myrtales) / EW688240.1 81% to 84A1 C-term / HIIDDHMDKKRNKTSSGGGDQDVDTDMVDDLLAFYSDEAKVNESDDLQNSIRLTRDNIKA / IIMDVMFGGTETVASAIEWAMAELMRSPEDLKKVQQELADVVGLDRRVEESDFEKLTYLK / CCLKETLRLHPPIPLLLHETAEDAVISGYRIPARSRVMINAWAIGRDPGSWTEPDKFKPS / RFLEPGMPDYKGSNFEFIPFGSGRRSCPGMQLGLYALDMAVAHLLHCFTWELPDGMKPSE / MDMGDVFGLTAPRSTRLVAVPTPRLVGALY* | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
 | CYP51G1 | present (485 aa) | Eucalyptus grandis workbook row 2; Gotoh source ID=>Eucagran2.60235; blast ID=Eucagran2.60235; best hit=CYP51G1; sequence column=L | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Eucalyptus.grandis.xlsx |
 | CYP71B.3 | present (508 aa) | Eucalyptus grandis workbook row 3; Gotoh source ID=>Eucagran2.57581; blast ID=Eucagran2.57581; best hit=CYP71B.3; sequence column=L | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Eucalyptus.grandis.xlsx |
 | CYP71B.3 | present (509 aa) | Eucalyptus grandis workbook row 4; Gotoh source ID=>Eucagran2.57624; blast ID=Eucagran2.57624; best hit=CYP71B.3; sequence column=L | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Eucalyptus.grandis.xlsx |

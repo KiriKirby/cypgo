@@ -1,7 +1,6 @@
-// Resource-specific importer for David R. Nelson's historical biblioD plant
-// P450 bibliography. Each explicit CYP-at-line-start plus species entry becomes
-// a provenance-distinct annotation record. The heterogeneous bibliography is
-// not treated as a protein FASTA source.
+// Resource-specific importer for David R. Nelson's historical biblioD P450
+// resource. Each explicit CYP-at-line-start plus organism entry becomes a
+// provenance-distinct record. Literal uppercase amino-acid runs are retained.
 package main
 
 import (
@@ -25,14 +24,19 @@ var (
 	binomRE  = regexp.MustCompile(`^([A-Z][a-z]+)\s+([a-z][A-Za-z.-]+)\b`)
 	hybridRE = regexp.MustCompile(`^([A-Z][a-z]+)\s+x\s+([a-z][A-Za-z.-]+)\b`)
 	spRE     = regexp.MustCompile(`^([A-Z][a-z]+)\s+sp\.\s+([A-Za-z0-9.-]+)\b`)
+	coordRE  = regexp.MustCompile(`^\d+\s+|\s+\d+$`)
+	lowerRE  = regexp.MustCompile(`[a-z]`)
 )
 
 type entry struct {
 	Line, Block int
 	Name        string
 	Species     string
+	Category    string
 	RawSpecies  string
 	Text        string
+	Sequence    string
+	Status      string
 }
 
 func decodeWindows1252(b []byte) string {
@@ -52,12 +56,21 @@ func cleanLine(s string) string {
 	return strings.TrimSpace(html.UnescapeString(tagRE.ReplaceAllString(s, "")))
 }
 
-func canonicalSpecies(raw string) (string, bool) {
+func classifyOrganism(raw string) (string, string, bool) {
 	s := strings.Join(strings.Fields(strings.ReplaceAll(cleanLine(raw), "_", " ")), " ")
 	lower := strings.ToLower(s)
-	for _, bad := range []string{"confidential", "discontinued,", "glyma02g31910.1", "os06g0570600", "this seq", "trypanosoma cruzi", "leishmania donovani", "leishmania infantum", "leishmania major", "monosiga ovata", "euglena gracilis"} {
+	for _, bad := range []string{"confidential", "discontinued,", "glyma02g31910.1", "os06g0570600", "this seq"} {
 		if strings.HasPrefix(lower, bad) {
-			return "", false
+			return "", "", false
+		}
+	}
+	for _, name := range []string{
+		"Trypanosoma cruzi", "Leishmania donovani", "Leishmania infantum", "Leishmania major",
+		"Monosiga ovata", "Euglena gracilis", "Ectocarpus siliculosis",
+		"Phaeodactylum tricornutum", "Skeletonema costatum", "Thalassiosira pseudonana",
+	} {
+		if strings.HasPrefix(lower, strings.ToLower(name)) {
+			return "protists", name, true
 		}
 	}
 	aliases := []struct{ prefix, value string }{
@@ -73,24 +86,77 @@ func canonicalSpecies(raw string) (string, bool) {
 	}
 	for _, a := range aliases {
 		if strings.HasPrefix(lower, a.prefix) {
-			return a.value, true
+			return "plants", a.value, true
 		}
 	}
 	if m := hybridRE.FindStringSubmatch(s); len(m) == 3 {
-		return m[1] + " x " + m[2], true
+		return "plants", m[1] + " x " + m[2], true
 	}
 	if m := spRE.FindStringSubmatch(s); len(m) == 3 {
-		return m[1] + " sp. " + m[2], true
+		return "plants", m[1] + " sp. " + m[2], true
 	}
 	if m := binomRE.FindStringSubmatch(s); len(m) == 3 {
-		return m[1] + " " + m[2], true
+		return "plants", m[1] + " " + m[2], true
 	}
 	for _, genus := range []string{"Amborella", "Arabidopsis", "Asparagus", "Citrus", "Petunia", "Selaginella", "Torenia", "Volvox"} {
 		if strings.HasPrefix(s, genus) {
-			return genus, true
+			return "plants", genus, true
 		}
 	}
-	return "", false
+	return "", "", false
+}
+
+func proteinLine(line string) string {
+	s := strings.TrimSpace(cleanLine(line))
+	if s == "" || lowerRE.MatchString(s) {
+		return ""
+	}
+	for {
+		next := coordRE.ReplaceAllString(s, "")
+		if next == s {
+			break
+		}
+		s = strings.TrimSpace(next)
+	}
+	s = strings.Join(strings.Fields(s), "")
+	if len(s) < 10 {
+		return ""
+	}
+	for _, r := range s {
+		if !strings.ContainsRune("ACDEFGHIKLMNPQRSTVWYBXZJUO*-", r) {
+			return ""
+		}
+	}
+	return s
+}
+
+func extractProtein(lines []string) string {
+	var best, current strings.Builder
+	flush := func() {
+		if current.Len() > best.Len() {
+			best.Reset()
+			best.WriteString(current.String())
+		}
+		current.Reset()
+	}
+	for _, line := range lines {
+		part := proteinLine(line)
+		if part == "" {
+			flush()
+			continue
+		}
+		current.WriteString(part)
+	}
+	flush()
+	seq := strings.TrimRight(best.String(), "*")
+	if len(seq) < 30 {
+		return ""
+	}
+	// ACGT-only runs are nucleotide, not protein.
+	if strings.Trim(seq, "ACGTNX") == "" {
+		return ""
+	}
+	return seq
 }
 
 func parse(data []byte) []entry {
@@ -109,7 +175,7 @@ func parse(data []byte) []entry {
 	}
 	var out []entry
 	for i, st := range starts {
-		species, ok := canonicalSpecies(st.rawSpecies)
+		category, species, ok := classifyOrganism(st.rawSpecies)
 		if !ok {
 			continue
 		}
@@ -123,7 +189,16 @@ func parse(data []byte) []entry {
 				block = append(block, strings.Join(strings.Fields(clean), " "))
 			}
 		}
-		out = append(out, entry{Line: st.line + 1, Block: i + 1, Name: st.name, Species: species, RawSpecies: cleanLine(st.rawSpecies), Text: strings.Join(block, " / ")})
+		sequence := extractProtein(lines[st.line+1 : end])
+		status := "reviewed-auxiliary-bibliod;sequence-missing"
+		if sequence != "" {
+			status = "reviewed-auxiliary-bibliod;literal-protein"
+			lowerBlock := strings.ToLower(strings.Join(block, " "))
+			if strings.Contains(lowerBlock, "fragment") || strings.Contains(lowerBlock, "partial") || strings.Contains(lowerBlock, " est") {
+				status += ";fragment-or-est"
+			}
+		}
+		out = append(out, entry{Line: st.line + 1, Block: i + 1, Name: st.name, Category: category, Species: species, RawSpecies: cleanLine(st.rawSpecies), Text: strings.Join(block, " / "), Sequence: sequence, Status: status})
 	}
 	return out
 }
@@ -141,7 +216,7 @@ func main() {
 		panic(fmt.Sprintf("source SHA-256 changed: got %s want %s", got, sourceSHA))
 	}
 	entries := parse(b)
-	if len(entries) != 7127 {
+	if len(entries) != 7134 {
 		panic(fmt.Sprintf("unexpected accepted biblioD entry count: %d", len(entries)))
 	}
 	if err := os.MkdirAll(filepath.Dir(*out), 0o755); err != nil {
@@ -156,7 +231,7 @@ func main() {
 	_ = w.Write([]string{"category", "species", "symbol", "id", "record_key", "source_url", "source_note", "sequence", "source_file", "source_sha256", "source_block", "review_status"})
 	for _, e := range entries {
 		note := fmt.Sprintf("biblioD.html historical bibliography block %d at source line %d; source species text=%s; %s", e.Block, e.Line, e.RawSpecies, e.Text)
-		_ = w.Write([]string{"plants", e.Species, e.Name, e.Name, fmt.Sprintf("bibliod:block-%04d:line-%05d:%s", e.Block, e.Line, strings.ToLower(e.Name)), sourceURL, note, "", filepath.Base(*in), sourceSHA, fmt.Sprintf("line-%d", e.Line), "reviewed-auxiliary-bibliography;no-sequence-accepted"})
+		_ = w.Write([]string{e.Category, e.Species, e.Name, e.Name, fmt.Sprintf("bibliod:block-%04d:line-%05d:%s", e.Block, e.Line, strings.ToLower(e.Name)), sourceURL, note, e.Sequence, filepath.Base(*in), sourceSHA, fmt.Sprintf("line-%d", e.Line), e.Status})
 	}
 	w.Flush()
 	if err := w.Error(); err != nil {

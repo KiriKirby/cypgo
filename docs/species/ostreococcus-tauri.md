@@ -4,7 +4,7 @@ Category: `plants`
 
 Records: 20
 
-Sequence audit: `10/20` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
+Sequence audit: `11/20` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
 
 Extraction method(s): `reviewed structured record`.
 
@@ -12,7 +12,7 @@ A missing sequence means the current Dr. Nelson resource did not provide an unam
 
 | CYP / ID | Sequence | Description | Source |
 |---|---|---|---|
-| CYP51G1 | missing | biblioD.html historical bibliography block 6 at source line 318; source species text=Ostreococcus tauri (micro algae); CYP51G1 Ostreococcus tauri (micro algae) / e_gw1.11.00.152.1\|Ostta4 at JGI / 56% to CYP51G1 Chlamy. / May be about 27 aa short at N-term / MTIILAIFILDQLSHGPLKGRRSPPVISVAPVWGGMVAFLAGPMRLMREAMPKYGEVFTVPVFHKRITFLIGPKVSEHFF / KAKDTEMSQKEVYEFNVPTFGKGVVFDVDHTTRAEQFRFFADSLKSNRLRMYVGMMVKEAEDFFAKWGDEGEVNLLDELS / ELIVLTASRCLLGREIRETLYSEVTELVHDLDKGMVPLSVFFPYAPIEAHRKRDKARKKLAQIFDKVIQARRESGASEPD / VLQTFIDARYKNGSKLSNDQVLGMLIAVLFAGQHTSSITSTWTGLLSIANKERVFPALEEEQRKIIKAHGNELDFDILAK / MDELHFAVKEALRMHPPLIMLLRYAQSAFEVETTEGKKYTVPKGHIVATSPAFAHRLDSVYSEPDTYKPGRFREPNAEDK / AAFASFIGFGGGRHGCMGETFAYMQIKTIWSILIRNFEFDMVGDLPEPDYEGMVVGPKHAGCRIKYKRRAKPLGK* | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP51G1 | present (475 aa) | biblioD.html historical bibliography block 6 at source line 318; source species text=Ostreococcus tauri (micro algae); CYP51G1 Ostreococcus tauri (micro algae) / e_gw1.11.00.152.1\|Ostta4 at JGI / 56% to CYP51G1 Chlamy. / May be about 27 aa short at N-term / MTIILAIFILDQLSHGPLKGRRSPPVISVAPVWGGMVAFLAGPMRLMREAMPKYGEVFTVPVFHKRITFLIGPKVSEHFF / KAKDTEMSQKEVYEFNVPTFGKGVVFDVDHTTRAEQFRFFADSLKSNRLRMYVGMMVKEAEDFFAKWGDEGEVNLLDELS / ELIVLTASRCLLGREIRETLYSEVTELVHDLDKGMVPLSVFFPYAPIEAHRKRDKARKKLAQIFDKVIQARRESGASEPD / VLQTFIDARYKNGSKLSNDQVLGMLIAVLFAGQHTSSITSTWTGLLSIANKERVFPALEEEQRKIIKAHGNELDFDILAK / MDELHFAVKEALRMHPPLIMLLRYAQSAFEVETTEGKKYTVPKGHIVATSPAFAHRLDSVYSEPDTYKPGRFREPNAEDK / AAFASFIGFGGGRHGCMGETFAYMQIKTIWSILIRNFEFDMVGDLPEPDYEGMVVGPKHAGCRIKYKRRAKPLGK* | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
 | CYP97A15 | missing | biblioD.html historical bibliography block 4871 at source line 28777; source species text=Ostreococcus tauri(microalgae); CYP97A15 Ostreococcus tauri(microalgae) / estExt_fgenesh1_pm.C_Chr_13.00010043\|Ostta4 at JGI | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
 | CYP97C18 | missing | biblioD.html historical bibliography block 4942 at source line 29447; source species text=Ostreococcus tauri(microalgae); CYP97C18 Ostreococcus tauri(microalgae) / gw1.09.00.100.1\|Ostta4 at JGI / formerly CYP97C15 but that was assigned to Selaginella | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
 | CYP97E5 | missing | biblioD.html historical bibliography block 4956 at source line 29537; source species text=Ostreococcus tauri(microalgae); CYP97E5 Ostreococcus tauri(microalgae) / estExt_gwp_GeneWisePlus.C_Chr_01.00010469\|Ostta4 at JGI | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |

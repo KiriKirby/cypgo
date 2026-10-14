@@ -12,6 +12,7 @@ import (
 	"path/filepath"
 	"regexp"
 	"sort"
+	"strconv"
 	"strings"
 	"time"
 
@@ -53,13 +54,23 @@ type detailPayload struct {
 }
 
 type manifest struct {
-	SchemaVersion  int    `json:"schema_version"`
-	SourceSHA256   string `json:"source_sha256"`
-	PlantRecords   int    `json:"plant_records"`
-	PlantSpecies   int    `json:"plant_species"`
-	DetailShards   int    `json:"detail_shards"`
-	GeneratedAtUTC string `json:"generated_at_utc"`
+	SchemaVersion  int                      `json:"schema_version"`
+	SourceSHA256   string                   `json:"source_sha256"`
+	PlantRecords   int                      `json:"plant_records"`
+	PlantSpecies   int                      `json:"plant_species"`
+	TotalRecords   int                      `json:"total_records"`
+	TotalSpecies   int                      `json:"total_species"`
+	DetailShards   int                      `json:"detail_shards"`
+	Categories     map[string]categoryStats `json:"categories"`
+	GeneratedAtUTC string                   `json:"generated_at_utc"`
 }
+
+type categoryStats struct {
+	Records int `json:"records"`
+	Species int `json:"species"`
+}
+
+var categoryOrder = []string{"animals", "plants", "fungi", "bacteria", "protists"}
 
 var slugRE = regexp.MustCompile(`[^a-z0-9]+`)
 
@@ -72,7 +83,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("static plant search: %d records, %d species, %d detail shards\n", result.PlantRecords, result.PlantSpecies, result.DetailShards)
+	fmt.Printf("static CYP search: %d records, %d species, %d detail shards\n", result.TotalRecords, result.TotalSpecies, result.DetailShards)
 }
 
 func generate(dbPath, outRoot string) (manifest, error) {
@@ -95,10 +106,10 @@ func generate(dbPath, outRoot string) (manifest, error) {
 	}
 	defer db.Close()
 
-	bySpecies := make(map[string][]detailRecord)
-	order := make([]string, 0)
+	byShard := make(map[string][]detailRecord)
+	speciesByCategory := make(map[string][]string)
 	seenSpecies := make(map[string]bool)
-	searchRows := make([][]any, 0, 18172)
+	searchRowsByCategory := make(map[string][][]any)
 	seenIDs := make(map[string]bool)
 
 	err = db.View(func(tx *bolt.Tx) error {
@@ -111,12 +122,13 @@ func generate(dbPath, outRoot string) (manifest, error) {
 			if err := json.Unmarshal(value, &r); err != nil {
 				return fmt.Errorf("record %q: %w", key, err)
 			}
-			if !strings.EqualFold(strings.TrimSpace(r.Category), "plants") {
+			category := strings.ToLower(strings.TrimSpace(r.Category))
+			if !knownCategory(category) {
 				return nil
 			}
 			species := strings.TrimSpace(r.Species)
 			if species == "" {
-				return fmt.Errorf("plant record %q has empty species", key)
+				return fmt.Errorf("%s record %q has empty species", category, key)
 			}
 			detailID := string(key)
 			if detailID == "" || seenIDs[detailID] {
@@ -128,33 +140,36 @@ func generate(dbPath, outRoot string) (manifest, error) {
 				name = strings.TrimSpace(r.ID)
 			}
 			if name == "" {
-				return fmt.Errorf("plant record %q has no displayable CYP name", key)
+				return fmt.Errorf("%s record %q has no displayable CYP name", category, key)
 			}
-			if !seenSpecies[species] {
-				seenSpecies[species] = true
-				order = append(order, species)
+			speciesKey := category + "\x00" + species
+			if !seenSpecies[speciesKey] {
+				seenSpecies[speciesKey] = true
+				speciesByCategory[category] = append(speciesByCategory[category], species)
 			}
-			shard := speciesSlug(species)
-			offset := len(bySpecies[species])
-			bySpecies[species] = append(bySpecies[species], detailRecord{
+			shard := categorySpeciesShard(category, species)
+			offset := len(byShard[shard])
+			byShard[shard] = append(byShard[shard], detailRecord{
 				DetailID: detailID, CYPName: name, ID: r.ID, RecordKey: r.RecordKey,
 				Category: r.Category, Species: r.Species, Description: r.Description,
 				Sequence: r.Sequence, PhgoLite: phgoLiteHeader(species, r.ID, r.Symbol), SourceURL: r.SourceURL,
 			})
-			searchRows = append(searchRows, []any{detailID, name, species, shard, offset, sourceLabel(r.SourceURL)})
+			searchRowsByCategory[category] = append(searchRowsByCategory[category], []any{detailID, name, species, shard, offset, sourceLabel(r.SourceURL, r.RecordKey)})
 			return nil
 		})
 	})
 	if err != nil {
 		return result, err
 	}
-	if len(searchRows) == 0 {
-		return result, errors.New("database contains no plant records")
+	if len(searchRowsByCategory) == 0 {
+		return result, errors.New("database contains no supported CYP records")
 	}
 
 	// Species are sorted for a predictable selector; database record order is
 	// preserved in search results and within each detail shard.
-	sort.Strings(order)
+	for _, category := range categoryOrder {
+		sort.Strings(speciesByCategory[category])
+	}
 	target := filepath.Join(outRoot, "static-data")
 	temp, err := os.MkdirTemp(outRoot, ".static-data-")
 	if err != nil {
@@ -165,22 +180,39 @@ func generate(dbPath, outRoot string) (manifest, error) {
 		return result, err
 	}
 
-	search := searchPayload{Species: order, Records: searchRows}
-	if err := writeJS(filepath.Join(temp, "plants-search.js"), "window.CYP_PLANT_SEARCH=", search); err != nil {
-		return result, err
+	stats := make(map[string]categoryStats, len(categoryOrder))
+	for _, category := range categoryOrder {
+		species := speciesByCategory[category]
+		if species == nil {
+			species = []string{}
+		}
+		rows := searchRowsByCategory[category]
+		if rows == nil {
+			rows = [][]any{}
+		}
+		search := searchPayload{Species: species, Records: rows}
+		prefix := "window.CYP_SEARCH_DATA=window.CYP_SEARCH_DATA||{};window.CYP_SEARCH_DATA[" + strconv.Quote(category) + "]="
+		if err := writeJS(filepath.Join(temp, category+"-search.js"), prefix, search); err != nil {
+			return result, err
+		}
+		stats[category] = categoryStats{Records: len(search.Records), Species: len(search.Species)}
+		result.TotalRecords += len(search.Records)
+		result.TotalSpecies += len(search.Species)
 	}
-	for _, species := range order {
-		shard := speciesSlug(species)
-		payload := detailPayload{Shard: shard, Records: bySpecies[species]}
-		if err := writeJS(filepath.Join(temp, "details", shard+".js"), "window.CYP_PLANT_DETAILS=", payload); err != nil {
+	for shard, records := range byShard {
+		payload := detailPayload{Shard: shard, Records: records}
+		if err := writeJS(filepath.Join(temp, "details", shard+".js"), "window.CYP_DETAILS=", payload); err != nil {
 			return result, err
 		}
 	}
 
-	result = manifest{
-		SchemaVersion: 1, SourceSHA256: hash, PlantRecords: len(searchRows),
-		PlantSpecies: len(order), DetailShards: len(order), GeneratedAtUTC: time.Now().UTC().Format(time.RFC3339),
-	}
+	result.SchemaVersion = 2
+	result.SourceSHA256 = hash
+	result.PlantRecords = stats["plants"].Records
+	result.PlantSpecies = stats["plants"].Species
+	result.DetailShards = len(byShard)
+	result.Categories = stats
+	result.GeneratedAtUTC = time.Now().UTC().Format(time.RFC3339)
 	if err := writeJSON(filepath.Join(temp, "build-manifest.json"), result); err != nil {
 		return result, err
 	}
@@ -190,7 +222,26 @@ func generate(dbPath, outRoot string) (manifest, error) {
 	return result, nil
 }
 
-func sourceLabel(sourceURL string) string {
+func knownCategory(category string) bool {
+	for _, candidate := range categoryOrder {
+		if category == candidate {
+			return true
+		}
+	}
+	return false
+}
+
+func categorySpeciesShard(category, species string) string {
+	if category == "plants" {
+		return speciesSlug(species)
+	}
+	return category + "-" + speciesSlug(species)
+}
+
+func sourceLabel(sourceURL, recordKey string) string {
+	if strings.HasPrefix(strings.ToLower(strings.TrimSpace(recordKey)), "bibliod:") {
+		return "David R. Nelson biblioD"
+	}
 	u := strings.ToLower(strings.TrimSpace(sourceURL))
 	if strings.Contains(u, "drnelson.uthsc.edu") {
 		return "David R. Nelson"

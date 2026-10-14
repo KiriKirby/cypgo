@@ -4,7 +4,7 @@ Category: `plants`
 
 Records: 21
 
-Sequence audit: `11/21` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
+Sequence audit: `12/21` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
 
 Extraction method(s): `reviewed structured record`.
 
@@ -12,7 +12,7 @@ A missing sequence means the current Dr. Nelson resource did not provide an unam
 
 | CYP / ID | Sequence | Description | Source |
 |---|---|---|---|
-| CYP51G1 | missing | biblioD.html historical bibliography block 7 at source line 329; source species text=Ostreococcus lucimarinus (micro algae); CYP51G1 Ostreococcus lucimarinus (micro algae) / e_gwEuk.11.159.1\|Ost9901_3 at JGI / MTVVIFIFLLDQLSHGPLKGRKSPPVIDVAPVWGGMLAFLAGPMKLMREATPKYGEVFTVPVFHKRITFLIGPKVSEFFF / KAKDTEMSQKEVYEFNVPTFGKGVVFDVDHTTRAEQFRFFADSLKSNRLRMYVGMMVKEAEDFFSKWGDAGEVDLLEQLS / ELIVLTASRCLLGREIRETLYSEVTDLVHDLDKGMVPLSVFFPYAPIEAHRKRDAARKNLAKIFDKVIQARRESGASEPD / VLQTFIDARYKDGSRLTNDQVLGMLIAVLFAGQHTSSITSTWTGLLAIANKERVMPALEKEQKDIMKKHGKDLDFDILAK / MDELHFAVKEALRMHPPLIMLLRMAQVPFEVETSTGKKYTVPKGHIVATSPAFSHRLDNVYSDPNEYKPERFREPNPEDK / AQFASFIGFGGGRHGCMGETFAYMQIKTIWSILLRNFEFEMVGKVPEPDYTGMVVGPTAGQCKIRYKRRVL* | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP51G1 | present (471 aa) | biblioD.html historical bibliography block 7 at source line 329; source species text=Ostreococcus lucimarinus (micro algae); CYP51G1 Ostreococcus lucimarinus (micro algae) / e_gwEuk.11.159.1\|Ost9901_3 at JGI / MTVVIFIFLLDQLSHGPLKGRKSPPVIDVAPVWGGMLAFLAGPMKLMREATPKYGEVFTVPVFHKRITFLIGPKVSEFFF / KAKDTEMSQKEVYEFNVPTFGKGVVFDVDHTTRAEQFRFFADSLKSNRLRMYVGMMVKEAEDFFSKWGDAGEVDLLEQLS / ELIVLTASRCLLGREIRETLYSEVTDLVHDLDKGMVPLSVFFPYAPIEAHRKRDAARKNLAKIFDKVIQARRESGASEPD / VLQTFIDARYKDGSRLTNDQVLGMLIAVLFAGQHTSSITSTWTGLLAIANKERVMPALEKEQKDIMKKHGKDLDFDILAK / MDELHFAVKEALRMHPPLIMLLRMAQVPFEVETSTGKKYTVPKGHIVATSPAFSHRLDNVYSDPNEYKPERFREPNPEDK / AQFASFIGFGGGRHGCMGETFAYMQIKTIWSILLRNFEFEMVGKVPEPDYTGMVVGPTAGQCKIRYKRRVL* | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
 | CYP97A15 | missing | biblioD.html historical bibliography block 4872 at source line 28780; source species text=Ostreococcus lucimarinus(microalgae); CYP97A15 Ostreococcus lucimarinus(microalgae) / estExt_GenewiseEukaryote.C_Chr_130084\|Ost9901_3at JGI / 95% to CYP97A14 Ostreococcus tauri (ortholog) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
 | CYP97C18 | missing | biblioD.html historical bibliography block 4943 at source line 29451; source species text=Ostreococcus lucimarinus(microalgae); CYP97C18 Ostreococcus lucimarinus(microalgae) / eugene.0900010237\|Ost9901_3 at JGI / 93% to CYP97C18 Ostreococcus tauri (ortholog) / formerly CYP97C15 but that was assigned to Selaginella | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
 | CYP97E5 | missing | biblioD.html historical bibliography block 4957 at source line 29540; source species text=Ostreococcus lucimarinus(microalgae); CYP97E5 Ostreococcus lucimarinus(microalgae) / eugene.0100010571\|Ost9901_3 / 89% to CYP97E5 Ostreococcus tauri (ortholog) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |

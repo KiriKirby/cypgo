@@ -1,6 +1,6 @@
 # Phaeodactylum tricornutum
 
-Category: `plants`
+Category: `protists`
 
 Records: 2
 

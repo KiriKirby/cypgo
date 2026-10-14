@@ -1,6 +1,6 @@
 # Skeletonema costatum
 
-Category: `plants`
+Category: `protists`
 
 Records: 2
 

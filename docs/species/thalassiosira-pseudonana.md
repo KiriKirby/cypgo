@@ -1,6 +1,6 @@
 # Thalassiosira pseudonana
 
-Category: `plants`
+Category: `protists`
 
 Records: 2
 

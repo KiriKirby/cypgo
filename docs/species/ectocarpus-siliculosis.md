@@ -1,6 +1,6 @@
 # Ectocarpus siliculosis
 
-Category: `plants`
+Category: `protists`
 
 Records: 2
 

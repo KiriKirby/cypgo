@@ -1023,10 +1023,10 @@ func write(path string, records []record, manifestSpecies []speciesRecord) error
 				continue
 			}
 			seen[key] = true
-			// Plant resources are the only category currently approved for
-			// selection during the manual plant audit. Other categories remain
-			// listed in the selector but are intentionally disabled.
-			s := speciesRecord{Name: r.Species, Category: r.Category, Selectable: strings.EqualFold(r.Category, "plants"), Description: r.Description}
+			// A species backed by at least one reviewed record is selectable in
+			// every supported category. Manifest-only resources remain disabled
+			// until a resource-specific parser contributes reviewed records.
+			s := speciesRecord{Name: r.Species, Category: r.Category, Selectable: true, Description: r.Description}
 			v, e := json.Marshal(s)
 			if e != nil {
 				return e
@@ -1039,8 +1039,8 @@ func write(path string, records []record, manifestSpecies []speciesRecord) error
 		for i := range manifestSpecies {
 			for _, r := range records {
 				if strings.EqualFold(r.Category, manifestSpecies[i].Category) && strings.EqualFold(r.Species, manifestSpecies[i].Name) {
-					manifestSpecies[i].Selectable = strings.EqualFold(manifestSpecies[i].Category, "plants")
-					manifestSpecies[i].Description = "Plant category enabled for manual audit; other categories are retained but disabled."
+					manifestSpecies[i].Selectable = true
+					manifestSpecies[i].Description = "Enabled by a completed resource-specific reviewed record set."
 					break
 				}
 			}
