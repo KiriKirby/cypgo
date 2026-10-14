@@ -141,7 +141,7 @@ func generate(dbPath, outRoot string) (manifest, error) {
 				Category: r.Category, Species: r.Species, Description: r.Description,
 				Sequence: r.Sequence, PhgoLite: phgoLiteHeader(species, r.ID, r.Symbol), SourceURL: r.SourceURL,
 			})
-			searchRows = append(searchRows, []any{detailID, name, species, shard, offset})
+			searchRows = append(searchRows, []any{detailID, name, species, shard, offset, sourceLabel(r.SourceURL)})
 			return nil
 		})
 	})
@@ -188,6 +188,20 @@ func generate(dbPath, outRoot string) (manifest, error) {
 		return result, err
 	}
 	return result, nil
+}
+
+func sourceLabel(sourceURL string) string {
+	u := strings.ToLower(strings.TrimSpace(sourceURL))
+	if strings.Contains(u, "drnelson.uthsc.edu") {
+		return "David R. Nelson"
+	}
+	if strings.Contains(u, "ricephylogenomics.ucdavis.edu") {
+		return "Rice P450 Phylogenomics"
+	}
+	if strings.Contains(u, "rapdb.dna.naro.go.jp") {
+		return "RAP-DB"
+	}
+	return strings.TrimSpace(sourceURL)
 }
 
 func phgoLiteHeader(species, id, symbol string) string {

@@ -29,7 +29,7 @@ func TestGeneratePlantStaticSearch(t *testing.T) {
 			return err
 		}
 		rows := []record{
-			{ID: "gene-1", RecordKey: "row-1", Category: "plants", Species: "Test plant", Symbol: "CYP71A1", Description: "a < b", Sequence: "MPEPTIDE", SourceURL: "https://example.test/1"},
+			{ID: "gene-1", RecordKey: "row-1", Category: "plants", Species: "Test plant", Symbol: "CYP71A1", Description: "a < b", Sequence: "MPEPTIDE", SourceURL: "https://drnelson.uthsc.edu/example"},
 			{ID: "fallback-id", Category: "plants", Species: "Test plant", Sequence: "AAAA"},
 			{ID: "animal-1", Category: "animals", Species: "Test animal", Symbol: "CYP2D6"},
 		}
@@ -63,7 +63,7 @@ func TestGeneratePlantStaticSearch(t *testing.T) {
 		t.Fatal(err)
 	}
 	text := string(search)
-	if !strings.Contains(text, "CYP71A1") || !strings.Contains(text, "fallback-id") || strings.Contains(text, "CYP2D6") {
+	if !strings.Contains(text, "CYP71A1") || !strings.Contains(text, "fallback-id") || !strings.Contains(text, "David R. Nelson") || strings.Contains(text, "CYP2D6") {
 		t.Fatalf("unexpected search data: %s", text)
 	}
 	shard := speciesSlug("Test plant")
@@ -76,6 +76,20 @@ func TestGeneratePlantStaticSearch(t *testing.T) {
 	}
 	if !strings.Contains(string(detail), "phgoLite") || !strings.Contains(string(detail), `\u003eTest_plant|gene-1(CYP71A1)`) {
 		t.Fatalf("detail data is missing PHgo Lite header: %s", detail)
+	}
+}
+
+func TestSourceLabel(t *testing.T) {
+	tests := map[string]string{
+		"https://drnelson.uthsc.edu/x":                   "David R. Nelson",
+		"https://ricephylogenomics.ucdavis.edu/p450/x":   "Rice P450 Phylogenomics",
+		"https://rapdb.dna.naro.go.jp/download/irgsp1/x": "RAP-DB",
+		"https://example.test/x":                         "https://example.test/x",
+	}
+	for source, want := range tests {
+		if got := sourceLabel(source); got != want {
+			t.Fatalf("sourceLabel(%q)=%q want %q", source, got, want)
+		}
 	}
 }
 

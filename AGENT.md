@@ -25,6 +25,7 @@
 ## Runtime compatibility
 
 - Static CYPgo detail pages display every available protein sequence as a PHgo Lite FASTA record using `>species|ID(symbol)`. Header whitespace is normalized to underscores, reserved Lite separators are replaced safely, empty symbols omit the parenthetical suffix, and sequence-missing records keep the reserved detail row empty.
+- Static search results keep David R. Nelson row numbers in the normal color. Every result from another source uses a bold red row number, and the result-count area groups those red row numbers by their human-readable source name.
 
 - Keep the bbolt runtime fields compatible with `phytozome-go/internal/cyp`: `ID`, `Category`, `Species`, `Symbol`, `Description`, `Sequence`, and `SourceURL`, plus the existing `species` bucket contract.
 - If richer source metadata is needed, evolve the schema and runtime reader together with backward-compatible tests; do not overload existing fields with ambiguous values.
