@@ -2,9 +2,9 @@
 
 Category: `plants`
 
-Records: 920
+Records: 926
 
-Sequence audit: `899/920` records have an accepted sequence; short records (<100 aa): `207`; unusually long records (>1000 aa): `0`.
+Sequence audit: `899/926` records have an accepted sequence; short records (<100 aa): `207`; unusually long records (>1000 aa): `0`.
 
 Extraction method(s): `reviewed structured record`.
 
@@ -12,6 +12,12 @@ A missing sequence means the current Dr. Nelson resource did not provide an unam
 
 | CYP / ID | Sequence | Description | Source |
 |---|---|---|---|
+| CYP82M2P | missing | biblioD.html historical bibliography block 3433 at source line 20026; source species text=potato; CYP82M2P potato / (pseudogene ortholog) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP82M3 | missing | biblioD.html historical bibliography block 3435 at source line 20031; source species text=potato; CYP82M3 potato / (ortholog) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP83-frags | missing | biblioD.html historical bibliography block 3545 at source line 20742; source species text=potato; CYP83-frags potato | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP716D15 | missing | biblioD.html historical bibliography block 6092 at source line 37341; source species text=potato = old CYP716Q1; CYP716D15 potato = old CYP716Q1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP716D17 | missing | biblioD.html historical bibliography block 6094 at source line 37343; source species text=potato = old CYP716Q3; CYP716D17 potato = old CYP716Q3 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP716D18P | missing | biblioD.html historical bibliography block 6095 at source line 37344; source species text=potato = old CYP716Q4P; CYP716D18P potato = old CYP716Q4P | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
 | CYP51G1 | present (487 aa) | Potato resource block 1 at normalized source line 13; header: CYP51G1; annotations: iTAG gene:chr01.349 100% match / PGSC0003DMS000001961 scaffold (-) strand / 98% to tomato (scaffold02227 CYP51G1) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/potato.P450s.doc |
 | CYP51G1 | missing | Potato resource block 2 at normalized source line 27; header: CYP51G1; annotations: PGSC0003DMB000000098 superscaffold / 1424379-1424843 (+) exon 1 / 1425865-1426863 (+) exon 2 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/potato.P450s.doc |
 | CYP51-pseudogene-1 | present (103 aa) | Potato resource block 3 at normalized source line 34; header: CYP51 pseudogene 1; annotations: PGSC0003DMB000000354 superscaffold (+) strand / 94% to tomato (scaffold02227 CYP51G1) / note: this seq is more like CYP51 than the CYP51 pseudogenes in tomato | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/potato.P450s.doc |

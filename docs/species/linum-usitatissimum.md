@@ -2,9 +2,9 @@
 
 Category: `plants`
 
-Records: 468
+Records: 471
 
-Sequence audit: `468/468` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
+Sequence audit: `468/471` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
 
 Extraction method(s): `explicit sequence column`.
 
@@ -12,6 +12,9 @@ A missing sequence means the current Dr. Nelson resource did not provide an unam
 
 | CYP / ID | Sequence | Description | Source |
 |---|---|---|---|
+| CYP74A1 | missing | biblioD.html historical bibliography block 1770 at source line 10006; source species text=Linum usitatissimum (flaxseed); CYP74A1 Linum usitatissimum (flaxseed) / GenEMBL U00428 (2038bp) / Song,W.-C., Funk,C.D. and Brash,A,R. / Molecular cloning of an allene oxide synthase: A cytochrome / P450 specialized for the metabolism of fatty acid hydroperoxides. / Proc. Natl. Acad. Sci. USA 90, 8519-8523 (1993) / Note: This sequence has two exceptions to the P450 motif. | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP74B16 | missing | biblioD.html historical bibliography block 1860 at source line 10815; source species text=Linum usitatissimum (flaxseed); CYP74B16 Linum usitatissimum (flaxseed) / HQ286277 / 63% to CYP74B7 Populus trichocarpa / CYP74B frag. Cucumis melo (Cucurbitales) / AF081953 / Tijet,N., Brash,A.R. and Whitehead,I.M. / cDNA sequences from melon (Cucumis melo) related to fatty acid / hydroperoxide metabolizing enzymes / Unpublished / fatty acid hydroperoxide metabolizing enzyme mRNA, partial cds / 68% to 74B2 / GELLCGYQPLVMRDPKVFDEPEAFNPDRFRGEKGVALLDYLFWS / NGPQTGTPSEKNKQCAGKDLVVLTAVVFVAYIFKRYDSIAGEGGSITAFQRAN / CYP74B frag. Citrus aurantium / DQ179652 / Pan,D., Guo,F., Chen,G., She,W. and Xia,H. / Molecular Cloning of cDNA Encoding Conservative Regions of / Hydroperoxide Lyase in Petals of 'Daidai' [C. aurantium L.] / Unpublished / 67% to 74B2 / HNLLFILGFNAFGGFSIFLPKLINAIASDTTGLQAKLRSEVKEK / CGTSALTLESVKSLELVQSVVCETLRLNPPVPLQFARARKDFQLSSYDSVYDIKKGEL / LCGYQPLVMRDSKVFDDAESFKAERFMGEKGSELLSYLYWSNGPQTGTPNDMNKQCAG / KDYVTLVACLT / CYP74B frag. Citrus maxima / DQ179653 / She,W., Guo,F., Chen,G., Pan,D. and Xia,H. / Molecular Cloning of cDNA Encoding Conservative Regions of / Hydroperoxide Lyase from the Petals of Pumello [C. grandis (L.) / osbeck] / Unpublished / hydroperoxide lyase mRNA, partial cds / 67% to 74B2 / HNLLFILGFNAFGGFSIFLPKLINAIASDTTGLQAKLRSEVKEK / CGTSALTFESVKSLELVQSVVCETLRLNPPVPLQFARARKDFQLSSYDSVYDIKKGEL / LCGYQPLVMRDSKVFDDAESFKAERFMGDKGSELLSYLYWSNGPQTGTPNDMNKQCAG / KDYVTLVACLT | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP85A1 | missing | biblioD.html historical bibliography block 3669 at source line 21933; source species text=Linum usitatissimum (flaxseed); CYP85A1 Linum usitatissimum (flaxseed) / GenEMBL CA483273.1 / 56% to Phaseolus, 53% to 85A2, 51% to 85A1 Arab. / 46% to 85A1 rice / 1-215 / 34 MALLIILAFISLLFIVLKWNDIRYSRKGLPPGTLGLPFVGETTQFLGLGPQFMKT 198 / 199 QKSRYGEVFKTHILGAPTIISMDPELNRYILHNEANGIVPGYPKAMADILGTNIASVHG 375 / 376 ATHKHIRGSILSLIGPNSVRAKLFPSVLKHVRIFVSDWDGTTVDIQDKTKEMVFFLAFK 552 / 553 QIFETESRSTYESFKPEFERIVAGTLALPINIPGTDYHTGLQ 678 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
 | CYP51G | present (489 aa) | Linum usitatissimum workbook row 2; Gotoh source ID=Linuusit731.8; seq ID=Linuusit731.8; best hit=CYP51G1; %ID=85.59; assigned CYP column=K; sequence column=L | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Linum.usitatissimum.xlsx |
 | CYP51G | present (489 aa) | Linum usitatissimum workbook row 3; Gotoh source ID=Linuusit709.178; seq ID=Linuusit709.178; best hit=CYP51G1; %ID=84.76; assigned CYP column=K; sequence column=L | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Linum.usitatissimum.xlsx |
 | CYP51G | present (321 aa) | Linum usitatissimum workbook row 4; Gotoh source ID=LinuusitC8344061.1; seq ID=LinuusitC8344061.1; best hit=CYP51G1; %ID=80.25; assigned CYP column=K; sequence column=L | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Linum.usitatissimum.xlsx |

@@ -1,0 +1,15 @@
+# Thlaspi arvense
+
+Category: `plants`
+
+Records: 1
+
+Sequence audit: `0/1` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
+
+Extraction method(s): ``.
+
+A missing sequence means the current Dr. Nelson resource did not provide an unambiguous protein sequence for this exact record. No external database sequence is substituted.
+
+| CYP / ID | Sequence | Description | Source |
+|---|---|---|---|
+| CYP71B1 | missing | biblioD.html historical bibliography block 128 at source line 1143; source species text=Thlaspi arvense; CYP71B1 Thlaspi arvense / GenEMBL L24438 (1648bp) / Udvardi,M.K., Metzger,J.D., Krishnapillai,V., Peacock,W.J. and / Dennis,E.S. / Cloning and nucleotide sequence of a full length cDNA from Thlaspi arvense / that encodes a cytochrome P-450. / Plant Physiol. 104, 755-756 (1994) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |

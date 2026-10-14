@@ -1,0 +1,21 @@
+# Brassica oleracea
+
+Category: `plants`
+
+Records: 7
+
+Sequence audit: `0/7` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
+
+Extraction method(s): ``.
+
+A missing sequence means the current Dr. Nelson resource did not provide an unambiguous protein sequence for this exact record. No external database sequence is substituted.
+
+| CYP / ID | Sequence | Description | Source |
+|---|---|---|---|
+| CYP702A10 | missing | biblioD.html historical bibliography block 5154 at source line 31610; source species text=Brassica oleracea; CYP702A10 Brassica oleracea / trace file 104049927 / 75% to 702A5 / cannot walk down to next exon / pseudogene fragment before exon 1 as seen on 702A10 / WTEILSPLIVVNLFHWMLQWRNPVPESK / Pseudogene piece = 100% to 702A10 / Exon 1 has only 1 aa diff from 702A10 / MVEVYEFWTIIVTLVVVKLCHWIYKWRNPTSNGKLPPGSMGFPIIGETLEFMKPHDAFQL / ATFLTKKILR | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP708A6 | missing | biblioD.html historical bibliography block 5628 at source line 34282; source species text=Brassica oleracea; CYP708A6 Brassica oleracea / trace file 104041627, mate = 104041519 no P450 seq / 83% to 708A4, 72% to 708A3, 70% to 708A2, 68% to 708A1 / possible ortholog to 708A4 Arab. / Could not walk either way on this trace file / KEHEVILESREDKEGGVTWEEYRHKMTFTNM / VIYESLRLANLGTIIFRKAVKDVEVK / GYTIPAGWIVAVAPSVVHYNSEIYENPLEFNPWRWE | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP708A7 | missing | biblioD.html historical bibliography block 5629 at source line 34291; source species text=Brassica oleracea; CYP708A7 Brassica oleracea / trace file 103326005 mate = 103326101 (no P450 seq) / 70% to end of exon 1 of CYP708A1, 60% to 708A3, / 58% to 708A2, 57% to 708A4 / probable ortholog of 708A1 Arab. / Could not walk either way on this trace file / EFPLIGETIHEFFKPHSFDEIPSSVKKRMSK | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP708A8 | missing | biblioD.html historical bibliography block 5630 at source line 34299; source species text=Brassica oleracea; CYP708A8 Brassica oleracea / trace file 103309251 mate = 103309345 / 84% to 708A4 exon 6, 65% to 708A6 / Could not walk either way on this trace file / VIHESLRMTNLAPMMFRKVVKDVEIK / 709A Subfamily | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP712A1 | missing | biblioD.html historical bibliography block 5801 at source line 35712; source species text=Brassica oleracea; CYP712A1 Brassica oleracea / CC949234.1 BH530927.1 / 87% to 712A1 Arabidopsis / KKQSSTAATKLPQSPSALPLIGHLHLIGKVLPVSFQSLARKHGPLMEIR / 2 LGASMCVVVSSSSVAREIFKDQELNFSSRPEFGSAEYFKYRGSRFVLAQYGDYWRFMKKL 181 / 182 CMTKLLAVPQLEKFADIREEEKLKLVESVAKCCGEGVHCDLSSLFVSYTNNIICRMAMST 361 / 362 RCSGTDNEAEEIRKLVKTCLELAGKVSVGDVLGPLKVLDFSGNGKKLVAVMEKYDLLVEK 541 / 542 IMKEREGMGMKKEGMRKDI 598 / 598 LDMVVETYRDPTAE 639 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP718A1 | missing | biblioD.html historical bibliography block 6151 at source line 37561; source species text=Brassica oleracea; CYP718A1 Brassica oleracea / BH505624.1, CC954041.1 / 87% to Arabidopsis 718A1 / MEFYKAQKNNRVFEDFVNPRIIKHGNLFKTKIMGSPTIVVNGAEANRLILSNEFSLVVSS / WPSSSVQLMGMNCIMAKQGEKHRVLRGIVANSLSYNGLESLLPNLCDTVRSHLETQWRGK / EEISLYRSTKAQTFTVVFECLYGIKVELGMLEIFERVLEGVFALPVEFPCSRFARAKKAR / LEIESLLVEKVREKRREMEQEEGDERPNRTLFSRLVQGLIKGEITEEEVVDNMVLLVFAA / S*HTSYAMAMTFKMLAQHPTC / KKARQVFSEKMRLSPPIFGSFRKAVADIHHGGFIIPKGWN / ILWTTYIIHYNP | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP722A1 | missing | biblioD.html historical bibliography block 6307 at source line 38995; source species text=Brassica oleracea; CYP722A1 Brassica oleracea / BH942847.1, BZ001883.1, BH507429.1, BH923947.1 / MDHLSLCPLVVLLLCLVILALSKIFKTVIQDQEKSTADIPPGSHGFPVVGETLQFMLSVNSGKGFYEFVRSRR / RYGSCFRTSLFGETHVFLSTTESARAVLNNESGMFTKRYIKSIARLGGNR / GWEHRGTVVLLTDLLQ / ITFKAMCKMLISLENEEELGSLQRDVGFVCEAMLAFPLNLPWTRFHK / MMQARGRVMEVLEKIIRERRNETNSHNNNYHEDFLQQLLAVDSDGSASSSDHSTKLTDAE / IKDNILTMIIA / GQDTTASALTWMVKYLGENQKVLNIL / KANSFLPFGMGGRTCLGLNMAKAMMVVFLHRFITTHR / WEVVDGDPSIEKWTLFARLKSGYPIRVSRRM | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |

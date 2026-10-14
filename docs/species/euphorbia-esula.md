@@ -1,0 +1,20 @@
+# Euphorbia esula
+
+Category: `plants`
+
+Records: 6
+
+Sequence audit: `0/6` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
+
+Extraction method(s): ``.
+
+A missing sequence means the current Dr. Nelson resource did not provide an unambiguous protein sequence for this exact record. No external database sequence is substituted.
+
+| CYP / ID | Sequence | Description | Source |
+|---|---|---|---|
+| CYP80C | missing | biblioD.html historical bibliography block 2787 at source line 16640; source species text=Euphorbia esula (Malpighiales); CYP80C Euphorbia esula (Malpighiales) / DV142200 / 60% to CYP80C1, 49% to 80B2, 49% to 80B4 / LSRDLIGFEDVGKAKSTLWKIMEMLMSPNISEFYPILEPLDLQGLKRKVGVCLEEMF / GVWEIYIKKRRERPHNDAHINDFLDVFLANGFDDDQINWLVLEFLGAGSDTTTTTIEWAM / AELLKNKQAMVKLEQELEREINTETIDESRVSHLPYLNACVKETLRLHPPAPFLLPHQAP / EVCKIMDYTIPKHAQLLVNVWAIGRDSSTWEDPLSFKPERFLTTDVDFKGRDFGLIPFSS / GRRICPGLPMAARQLPLILGYLIGRFSWSVS | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP711A | missing | biblioD.html historical bibliography block 5794 at source line 35649; source species text=Euphorbia esula (Malpighiales); CYP711A Euphorbia esula (Malpighiales) / DV150840.1 DV149195.1 / LGSSGETTDITFSNLSLQLATDVIGQAAFGVDFGLSKPHLTTTNTNEVSNFINQHVYSTT / QLKMDLSGSFSIIIGFLIPFLQEPFRQILKRIPGTMDWKVDRTNKDLSGRLDEIVTKRML / DNNNTSASTDFLSLILKARESQTVSRNVFTPDYISAVTYEHLLAGSATTSFTLSCIVYLV / AGHPQVETKLLAEIDAFGSPDQIPTAHDLQTKFPYLDQVIKEVMRFYIVSPLVARETSKE / VEIGGYLLPKNTWVWLALGVL / AKDPKNFPDPDEFKPERFDPNCDEEKQRHPYALIPFGIGPRACIGQKFSLQXXKLSMIHL / YRKYLFRHSPDMEKPLELEYGIVLNFKH | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP726A2 | missing | biblioD.html historical bibliography block 6402 at source line 40011; source species text=Euphorbia esula (Malpighiales); CYP726A2 Euphorbia esula (Malpighiales) / DV153215.1 DV140755.1 DV151969.1 DV138111.1 DV138221.1 / 58% to 726A1, 52% to 71D4 / this family should have been given CYP71 subfamily status / possibly in CYP71D / MELQFQIPSYPVLFSFLIFIFMLIKILKKQTQSSISPPGPWKYPILGNIPQLAAGG / KLPHHRFRDLAKIYGPVMNIQLGQVKSIVISSPETAKEVLKTQDIQFANRPLLLAGEMVL / YNRKDILYGLYGDQWRQMRKICTLELLSAKRIQSFKSVREQEVESFLQFLRSKAGSPVNL / TAAVFELTNTIMMITTIG / QKCKNQEAVMSVIDRVSEAAAGFSVADVFPSLKFLHYLSGEKSKLQKLHKETDEILEE / IISEHKANAKIGSQADNLLDVLLYLQKNGNLQVPLTNDNIKAATLEMFGAGSDTSSKTTD / WAMAQLMRKPSTMKKAQEEVRRVFGDTGKVEESRIQELKYLKLVVKETLRLHPAVALIPR / ECREKTKIDGYDVYPKTKILVNPWAIGRDPKVWTDPESFNPERFQDSPIDYKGTNFELIP / FGAGKRICPGMTLGIVNLELF / LANLLYHFDWKFPNGVTAENLDMNEAIGGAIKRKLDLELIPIPYTSS* | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP726 | missing | biblioD.html historical bibliography block 6403 at source line 40027; source species text=Euphorbia esula (Malpighiales); CYP726 Euphorbia esula (Malpighiales) / DV154738.1 / 63% to 726A1 N-term / LFSILLCYLLLIIFTLLTLKHKKHDSNCPPGPWKFPILGNLPHLLLSSDQTHQRFSSLSL / IYGPIMSLQLGQVPIIVISSAQAVKEVMKTHVESFAERSPGLDAQIVFYDRNDIFFGPYG / NHWRQMRKIWILEFFSAKRVQSFRLIREEEVSEAIKFLRSKSGSSVNLTKVIFEFTNSIM / IRTIIGKNCHQKERLMSIVGGVNEAISSFGIADAFPS | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP728 | missing | biblioD.html historical bibliography block 6496 at source line 40782; source species text=Euphorbia esula (Malpighiales); CYP728 Euphorbia esula (Malpighiales) / DV148052 / 57% to 728B3 / HYXXDKEIVHNIMLVLTAGHDTSSVLLTFLMRLFANEPSIYAAVLQEQEEIAKSKCKDES / LTWEDLSKMKYTWRVAMETMRVSPPIFGGFRKAVNDIEYDGYLIPKGWQIFWVTSMTHMD / NSIFQEPDRFDPARFENSVPPYSYIPFGGGPRICPGYEFARLETLVTIHYLVTQFSWEMI / ADNFFSRDPMPVPRGGLPIKLVQKQPVV* | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP734 | missing | biblioD.html historical bibliography block 6604 at source line 41631; source species text=Euphorbia esula (Malpighiales); CYP734 Euphorbia esula (Malpighiales) / DV149146.1 EST N-term / MEKEEDLVVFYYWIKVIAVCLIVLMVGL / KVGVVLWWRPRRIEAHFSKQGIRGPPYKFFIGNVKELVQMMLKASSQPMMPPFSHNILPR / VLSFYHHWK | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |

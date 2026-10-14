@@ -2,9 +2,9 @@
 
 Category: `plants`
 
-Records: 227
+Records: 228
 
-Sequence audit: `227/227` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
+Sequence audit: `227/228` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
 
 Extraction method(s): `explicit sequence column`.
 
@@ -12,6 +12,7 @@ A missing sequence means the current Dr. Nelson resource did not provide an unam
 
 | CYP / ID | Sequence | Description | Source |
 |---|---|---|---|
+| CYP79F3 | missing | biblioD.html historical bibliography block 2775 at source line 16489; source species text=Boechera stricta; CYP79F3 Boechera stricta / No accession number / Carrie Olson-Manning and Mary Schuler / submitted to nomenclature committee 9/30/2008 / 90% to CYP79F1, 86% to CYP79F2 / CYP79F4v1 Boechera stricta / No accession number / Carrie Olson-Manning and Mary Schuler / submitted to nomenclature committee 9/30/2008 / 90% to CYP79F1, 87% to CYP79F2, 89% to CYP79F3 / note: there are two strains MT (Montana) and CO (Colorado) / both strains CYP79F4 sequences are 100% identical / CYP79F5v1 Boechera stricta / No accession number / Carrie Olson-Manning and Mary Schuler / submitted to nomenclature committee 2/20/2012 / 91% to CYP79F4, 96% to CYP79F3, 2 aa diffs to CYP79F5v2 / note: there are two strains MT (Montana) and CO (Colorado) / this is the MT strain / CYP79F5v2 Boechera stricta / No accession number / Carrie Olson-Manning and Mary Schuler / submitted to nomenclature committee 2/20/2012 / 90% to CYP79F1, 87% to CYP79F2, 89% to CYP79F3 / note: there are two strains MT (Montana) and CO (Colorado) / this is the CO strain / 80A Subfamily | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
 | CYP51G1 | present (488 aa) | Boechera stricta workbook row 2; seq ID=Boecstri13671.1564; best hit=CYP51G1; CYP name=CYP51G1; sequence column=L (source header is blank) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Boechera.stricta.xlsx |
 | CYP71A12 | present (240 aa) | Boechera stricta workbook row 3; seq ID=Boecstri24513.908; best hit=CYP71A12; CYP name=CYP71A; sequence column=L (source header is blank) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Boechera.stricta.xlsx |
 | CYP71A13 | present (282 aa) | Boechera stricta workbook row 4; seq ID=Boecstri12092.1; best hit=CYP71A13; CYP name=CYP71A; sequence column=L (source header is blank) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Boechera.stricta.xlsx |

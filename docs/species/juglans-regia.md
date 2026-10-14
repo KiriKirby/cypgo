@@ -1,0 +1,22 @@
+# Juglans regia
+
+Category: `plants`
+
+Records: 8
+
+Sequence audit: `0/8` records have an accepted sequence; short records (<100 aa): `0`; unusually long records (>1000 aa): `0`.
+
+Extraction method(s): ``.
+
+A missing sequence means the current Dr. Nelson resource did not provide an unambiguous protein sequence for this exact record. No external database sequence is substituted.
+
+| CYP / ID | Sequence | Description | Source |
+|---|---|---|---|
+| CYP71 | missing | biblioD.html historical bibliography block 127 at source line 1134; source species text=Juglans regia (walnut, Fagales); CYP71 Juglans regia (walnut, Fagales) / CV195714.1 / 65% to 71A10 / ANTSSTTTEWLMAELIKNPNIMKRAQEEVRIVVGNKLKIDENDIHQMCYLKCVLKETLRL / HPPAPLLLPRETSSSVKLGGYDIPPKTKVFVNTWAIQRDPTVWERPEEFLPERFIDNPID / FRGHDFEFLPFGGGRRGCPGL / 71B Subfamily | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP71 | missing | biblioD.html historical bibliography block 1284 at source line 6605; source species text=Juglans regia (walnut, Fagales); CYP71 Juglans regia (walnut, Fagales) / GenEMBL CV195714 EST / 65% to 71A10 soybean, 61% to 71A1 / 209 TSSTTTEWLMAELIKNPNIMKRAQEEVRIVVGNKLKIDENDIHQMCYLKCVLKETLRLHP 388 / 389 PAPLLLPRETSSSVKLGGYDIPPKTKVFVNTWAIQRDPTVWERPEEFLPERFIDNPIDFR 568 / 569 GHDFEFLPFGGGRRGCPGLAFGLASVEYVIAHMLCWFDWRLP 694 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP82 | missing | biblioD.html historical bibliography block 3233 at source line 19088; source species text=Juglans regia (walnut, Fagales); CYP82 Juglans regia (walnut, Fagales) / CV196615 / 57% to 82A11 Medicago, 46% TO 82F1, 46% TO 92A11 C-TERM / GISLGLQLIQLTLATFLHAFDISTPSAELVDMVEKAGLSTAKATPLEIHLTPRLLAQVYHV* / 82B Subfamily | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP88 | missing | biblioD.html historical bibliography block 3955 at source line 23642; source species text=Juglans regia (walnut, Fagales); CYP88 Juglans regia (walnut, Fagales) / GenEMBL CV196173.1 EST / IEENVVSSLNKWTTMGEIEFLTELRKLTFRIIMYIFLSSESEPVMVALEREYTTLNYG / VRAMGINLPGFAYHKALKARKNLVATFQSIVDERRNQRKKLVVLPAKKDMMDALLDVEDE / NGRKLTDEEIIDVLLMYLNAGHESSGHTAMWAAIFLEQHPEYLQKAKAEQEEIVRKRPPT / QIGLTLKEFREMEYLSKVIDETLRLITFSLTVFREAKMDVNIGGYTIPKGWKVLVWXRSV / HLDPEIYVNPKEFNPSR 803 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP89 | missing | biblioD.html historical bibliography block 4141 at source line 24542; source species text=Juglans regia (walnut, Fagales); CYP89 Juglans regia (walnut, Fagales) / CV196298 / 50% to 89A4, 53% to Casuarina glauca CO037852 CO037198 / AITAGYEQFTVLATWPRLGKLLLRNRWKRYQQFLKNQDDVILPLIRARKKLRQERGKAFE / VIPYIDSLLDLKIPGEKGNVEEADILSLCSELINAGGDTSTTMLQWVLAYLVKHPRVQSK / LFAEISEVVAKGAKEVEEDDLHKIPYLKAVVLETLRIHPPNTLLVPHTGMEDVELGGYTI / PKDTKVNIVTALIGRDPNVWENPMEFRPERLLTSEDIGEEASDVTLFKMMPFGAGRRNCP / GNKLGLLLLQYFIANLVWNFEFKTVDGEGVDL | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP94 | missing | biblioD.html historical bibliography block 4587 at source line 27529; source species text=Juglans regia (walnut, Fagales); CYP94 Juglans regia (walnut, Fagales) / CV197857.1 47% to 94B3, 61% to 94A1 / MESLQFLAFASLTVLVPLLSFFFLTRKSKPQKQSPPS / PSTITTQLPKSYPLIGSFFAVYANQKRRMQWMTDFLKSSPSATIVLRRSFNSYQVITANP / AVVQHILKTEFHNYGKGGNFQLVLKDLLGYGIFNVDGESWKFQRQVSSHEFNTKSLRKFI / ETVVDTELSDRLIPILSSAAAKTGTVLDFQDILQRFAFDNICKIAFGFDPAYLLPS | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP721 | missing | biblioD.html historical bibliography block 6297 at source line 38901; source species text=Juglans regia (walnut, Fagales); CYP721 Juglans regia (walnut, Fagales) / CV197967, CV197968 / 47% to 721A1 N-term, 50% to tomato 721 / MNLLLLLIVMTIFFLLLKLLHSVLWLPWRIQDHFRRQG / IGGPPYRPVVGNTLEIRRMYAEAQSKAMSWDDHDILHRLTPYHSEWSAVYGRTFLYWFGS / KPRLAITDPDLIKEVLMNTSGSFEKIDFAPRIKMFFGQGILLLKGERWSLHRRIANQAFK / MEKVKGWVPEIVASTGQMLQKWEEERGGRDECRGSSA* | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP734 | missing | biblioD.html historical bibliography block 6596 at source line 41567; source species text=Juglans regia (walnut, Fagales); CYP734 Juglans regia (walnut, Fagales) / CV197692.1 69% to CYP734A13 / LLIPVVAKSVVDMLEQWQLVAMSELGEVEIEVSEWFQTLT | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |

@@ -30,40 +30,40 @@ func TestReviewedPlantResourceCountsAndRepresentativeSequences(t *testing.T) {
 		byKey[row.RecordKey] = row
 	}
 	want := map[string]totals{
-		"potato":                {920, 899},
-		"Capsicum annuum":       {617, 617},
+		"potato":                {926, 899},
+		"Capsicum annuum":       {629, 617},
 		"Thellungiella parvula": {207, 207},
 		"Eutrema salsugineum":   {226, 226},
 		"Capsella grandiflora":  {220, 220},
 		"Capsella rubella":      {245, 245},
-		"Brassica rapa":         {377, 377},
-		"Boechera stricta":      {227, 227},
-		"Carica papaya":         {182, 182},
-		"Mimulus guttatus":      {368, 368},
+		"Brassica rapa":         {390, 377},
+		"Boechera stricta":      {228, 227},
+		"Carica papaya":         {365, 182},
+		"Mimulus guttatus":      {396, 368},
 		"Theobroma cacao":       {336, 336},
-		"Gossypium raimondii":   {449, 449},
-		"Eucalyptus grandis":    {762, 762},
-		"Cucumis sativus":       {229, 229},
+		"Gossypium raimondii":   {461, 449},
+		"Eucalyptus grandis":    {763, 762},
+		"Cucumis sativus":       {238, 229},
 		"Citrulus lanatus":      {233, 233},
-		"Prunus persica":        {625, 625},
+		"Prunus persica":        {635, 625},
 		"Prunus mume":           {282, 282},
 		"Malus domestica":       {331, 331},
 		"Fragaria ananassa":     {206, 206},
-		"Fragaria vesca":        {331, 331},
+		"Fragaria vesca":        {344, 331},
 		"Cannabis sativa":       {356, 356},
-		"Glycine max":           {171, 115},
-		"Medicago truncatula":   {349, 349},
-		"Lotus japonicus":       {246, 246},
-		"Cicer arietinum":       {211, 211},
+		"Glycine max":           {871, 115},
+		"Medicago truncatula":   {541, 349},
+		"Lotus japonicus":       {282, 246},
+		"Cicer arietinum":       {224, 211},
 		"Cajanus cajanifolius":  {291, 291},
-		"Jatropha curcas":       {481, 481},
-		"Ricinus communis":      {263, 263},
-		"Manihot esculenta":     {336, 336},
-		"Linum usitatissimum":   {468, 468},
-		"Vitis vinifera":        {672, 672},
-		"Nelumbo nucifera":      {364, 364},
+		"Jatropha curcas":       {495, 481},
+		"Ricinus communis":      {324, 263},
+		"Manihot esculenta":     {344, 336},
+		"Linum usitatissimum":   {471, 468},
+		"Vitis vinifera":        {1266, 672},
+		"Nelumbo nucifera":      {407, 364},
 		"Aquilegia coerulea":    {1023, 1023},
-		"Oryza sativa":          {1152, 740},
+		"Oryza sativa":          {1639, 740},
 	}
 	for species, expected := range want {
 		if got[species] != expected {
@@ -75,8 +75,8 @@ func TestReviewedPlantResourceCountsAndRepresentativeSequences(t *testing.T) {
 		totalRecords += value.records
 		totalSequences += value.sequences
 	}
-	if totalRecords != 21773 || totalSequences != 20622 {
-		t.Fatalf("reviewed plant totals=%d records/%d sequences, want 21389/20238", totalRecords, totalSequences)
+	if totalRecords != 28900 || totalSequences != 20622 {
+		t.Fatalf("reviewed plant totals=%d records/%d sequences, want 28900/20622", totalRecords, totalSequences)
 	}
 	checks := map[string]struct {
 		id, symbol, prefix, suffix string

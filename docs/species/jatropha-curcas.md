@@ -2,9 +2,9 @@
 
 Category: `plants`
 
-Records: 481
+Records: 495
 
-Sequence audit: `481/481` records have an accepted sequence; short records (<100 aa): `35`; unusually long records (>1000 aa): `0`.
+Sequence audit: `481/495` records have an accepted sequence; short records (<100 aa): `35`; unusually long records (>1000 aa): `0`.
 
 Extraction method(s): `reviewed structured record`.
 
@@ -12,6 +12,20 @@ A missing sequence means the current Dr. Nelson resource did not provide an unam
 
 | CYP / ID | Sequence | Description | Source |
 |---|---|---|---|
+| CYP73A104 | missing | biblioD.html historical bibliography block 1749 at source line 9834; source species text=Jatropha curcas  (Malpighiales); CYP73A104 Jatropha curcas (Malpighiales) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP75B63 | missing | biblioD.html historical bibliography block 2078 at source line 12678; source species text=Jatropha curcas  (Malpighiales); CYP75B63 Jatropha curcas (Malpighiales) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP81B54 | missing | biblioD.html historical bibliography block 2943 at source line 17488; source species text=Jatropha curcas  (Malpighiales); CYP81B54 Jatropha curcas (Malpighiales) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP81B55 | missing | biblioD.html historical bibliography block 2945 at source line 17490; source species text=Jatropha curcas  (Malpighiales); CYP81B55 Jatropha curcas (Malpighiales) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP82D58 | missing | biblioD.html historical bibliography block 3342 at source line 19474; source species text=Jatropha curcas  (Malpighiales); CYP82D58 Jatropha curcas (Malpighiales) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP84A50 | missing | biblioD.html historical bibliography block 3602 at source line 21204; source species text=Jatropha curcas  (Malpighiales); CYP84A50 Jatropha curcas (Malpighiales) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP84A51 | missing | biblioD.html historical bibliography block 3603 at source line 21205; source species text=Jatropha curcas  (Malpighiales); CYP84A51 Jatropha curcas (Malpighiales) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP93B22 | missing | biblioD.html historical bibliography block 4481 at source line 26911; source species text=Jatropha curcas (Malpighilaes, Euphorbia); CYP93B22 Jatropha curcas (Malpighilaes, Euphorbia) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP97B26 | missing | biblioD.html historical bibliography block 4921 at source line 29194; source species text=Jatropha curcas (Euphorbia, malpighiales); CYP97B26 Jatropha curcas (Euphorbia, malpighiales) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP98A63 | missing | biblioD.html historical bibliography block 5038 at source line 30412; source species text=Jatropha curcas (Malpighilaes, Euphorbia); CYP98A63 Jatropha curcas (Malpighilaes, Euphorbia) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP716A55 | missing | biblioD.html historical bibliography block 6016 at source line 36846; source species text=Jatropha curcas (Malpighilaes, Euphorbia); CYP716A55 Jatropha curcas (Malpighilaes, Euphorbia) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP716A56 | missing | biblioD.html historical bibliography block 6018 at source line 36850; source species text=Jatropha curcas (Malpighilaes, Euphorbia); CYP716A56 Jatropha curcas (Malpighilaes, Euphorbia) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP716A57 | missing | biblioD.html historical bibliography block 6020 at source line 36854; source species text=Jatropha curcas (Malpighilaes, Euphorbia); CYP716A57 Jatropha curcas (Malpighilaes, Euphorbia) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
+| CYP716T1 | missing | biblioD.html historical bibliography block 6141 at source line 37530; source species text=Jatropha curcas; CYP716T1 Jatropha curcas | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/biblioD.html |
 | CYP51G1 | present (486 aa) | Jatropha Word block 1 at normalized source line 68; literal protein lines 74-84; header=CYP51G1; annotations: JcCD0121598.10 + / GW613182.1, GW619602.1, GW617740.1 / finished / JcCB0430161.10 - / 86% to CYP51G1 Ricinus communis / CYP71 clan / CYP71 family (61 Jatropha sequences, 20 are complete or nearly complete) / 10 Ricinus sequences | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Jatropha.P450s.2012.doc |
 | CYP71B | present (506 aa) | Jatropha Word block 2 at normalized source line 93; literal protein lines 101-109; header=CYP71B JcCA0015371.10 + short; annotations: BABX01006048.1 / 55% to CYP71B10 Arab. / 59% to CYP71AS1 Citrus sinensis / 97% to CYP71AS   JcCB0119211.20, 96% to CYP71AS JcCA0295881.10 / 96% to JcCA0060021.10 / complete, one stop / 71% to CYP71B64 gi\|255564478\|ref\|XP_002523235.1  Ricinus communis | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Jatropha.P450s.2012.doc |
 | CYP71B | present (180 aa) | Jatropha Word block 3 at normalized source line 111; literal protein lines 117-118; header=CYP71B JHS05H19r.10 -; annotations: BABX01121443.1 / Runs off the contig end / 97% to JcCA0015371.10 / finished / 76% to CYP71B65 gi\|255564484\|ref\|XP_002523238.1  Ricinus communis | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Jatropha.P450s.2012.doc |
