@@ -1,19 +1,19 @@
 {
   "schema_version": 2,
-  "source_sha256": "a53134d8b81e549a2d435011973d85319446175b84a8cb0d43d8ac8184859f98",
+  "source_sha256": "88ed855261406eb682de9db1af3ddbdff48c3b4e91669c56837c513959759186",
   "plant_records": 28892,
   "plant_species": 405,
-  "total_records": 28907,
-  "total_species": 415,
-  "detail_shards": 415,
+  "total_records": 37342,
+  "total_species": 796,
+  "detail_shards": 796,
   "categories": {
     "animals": {
-      "records": 0,
-      "species": 0
+      "records": 5408,
+      "species": 113
     },
     "bacteria": {
-      "records": 0,
-      "species": 0
+      "records": 3027,
+      "species": 268
     },
     "fungi": {
       "records": 0,
@@ -28,5 +28,5 @@
       "species": 10
     }
   },
-  "generated_at_utc": "2026-10-14T08:42:42Z"
+  "generated_at_utc": "2026-10-15T06:46:26Z"
 }

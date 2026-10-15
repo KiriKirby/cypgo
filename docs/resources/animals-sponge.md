@@ -4,7 +4,7 @@
 - Resource: `animals-spongeCYPs.doc`
 - URL: https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/spongeCYPs.doc
 - Parser status: `resource-specific normalized-text audit`
-- PGD records: `0`
-- Records with verified sequence: `0`
+- PGD records: `19`
+- Records with verified sequence: `16`
 
 Parsing rule: FASTA blocks are recognized from `>` headers and wrapped lines; structured tables may provide sequence only from an explicit `sequence` column. Unlabeled tokens, alignment fragments, scores, and comments are not accepted as sequences. This record documents the exact resource-level extraction result; unresolved or ambiguous records remain searchable with an empty sequence.

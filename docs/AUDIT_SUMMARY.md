@@ -6,10 +6,11 @@ Listed species/resource entries: 185
 
 | Category | Reviewed PGD records | Literal source sequences |
 |---|---:|---:|
-| animals | 0 | 0 |
+| animals | 5408 | 5368 |
 | plants | 28892 | 22485 |
 | fungi | 0 | 0 |
-| bacteria | 0 | 0 |
+| bacteria | 3027 | 2959 |
+| protists | 15 | 7 |
 
 Release acceptance rules:
 

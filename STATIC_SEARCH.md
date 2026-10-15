@@ -28,6 +28,8 @@ Search rows contain only the detail ID, displayed CYP name, species, detail shar
 
 The detail page reserves rows for every runtime database field: CYP Name, ID, Record Key, Category, Species, Description, Sequence, and Source URL. The Sequence row contains the available FASTA text using the compact `>species|ID(symbol)` header format; fields are whitespace-normalized and separator-safe, and the symbol suffix is omitted when empty. Missing values leave their row empty. Its browser title and visible heading append the current CYP name.
 
+The detail actions operate on that table only: **Download Table** writes a real OOXML `.xlsx` workbook, **Print** opens the browser print dialog, and **Close** only requests that the browser close the current detail tab/window. Close never navigates backward or redirects to the search page. Printing the detail page includes only the detail table. Printing the search page manually, including with Ctrl+P, includes only the current search-results table.
+
 ## Layout and wrapping rules
 
 All result and detail tables use fixed table layout. Cells may wrap long words and protein sequences, row height grows with content, and column proportions remain fixed:

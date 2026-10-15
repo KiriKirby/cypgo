@@ -1,0 +1,121 @@
+# Trichoplax adhaerens
+
+Category: `animals`
+
+Records: 107
+
+Sequence audit: `107/107` records have an accepted sequence; short records (<100 aa): `1`; unusually long records (>1000 aa): `0`.
+
+Extraction method(s): `reviewed structured record`.
+
+A missing sequence means the current Dr. Nelson resource did not provide an unambiguous protein sequence for this exact record. No external database sequence is substituted.
+
+| CYP / ID | Sequence | Description | Source |
+|---|---|---|---|
+| CYP2 | present (508 aa) | trichoplax fixed Word profile block 1 line 22; exact header=CYP2 clan.a e_gw1.8.275.1\|Triad1 31% to CYP1A1 human, 31% to 1C2 danio, | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (430 aa) | trichoplax fixed Word profile block 2 line 34; exact header=CYP3 clan.a fgeneshTA2_pg.C_scaffold_4000046\|Triad1 almost identical to 3 clan.t | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (451 aa) | trichoplax fixed Word profile block 3 line 42; exact header=CYP3 clan.t gw1.898.1.1\|Triad1 almost identical to 3 clan.a | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (470 aa) | trichoplax fixed Word profile block 4 line 50; exact header=CYP3 clan.aaa gw1.4.1035.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (475 aa) | trichoplax fixed Word profile block 5 line 58; exact header=CYP3 clan.b gw1.5.1054.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (221 aa) | trichoplax fixed Word profile block 6 line 66; exact header=CYP3 clan.c e_gw1.898.5.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (500 aa) | trichoplax fixed Word profile block 7 line 71; exact header=CYP3 clan.d fgeneshTA2_pg.C_scaffold_4000049\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (466 aa) | trichoplax fixed Word profile block 8 line 80; exact header=CYP3 clan.e e_gw1.4.1027.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (477 aa) | trichoplax fixed Word profile block 9 line 88; exact header=CYP3 clan.f fgeneshTA2_pg.C_scaffold_5000102\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (501 aa) | trichoplax fixed Word profile block 10 line 96; exact header=CYP3 clan.g fgeneshTA2_pg.C_scaffold_5000091\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (492 aa) | trichoplax fixed Word profile block 11 line 105; exact header=CYP3 clan.h fgeneshTA2_pg.C_scaffold_3000387\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (494 aa) | trichoplax fixed Word profile block 12 line 114; exact header=CYP3 clan.i e_gw1.5.313.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (373 aa) | trichoplax fixed Word profile block 13 line 123; exact header=CYP3 clan.j fgeneshTA2_pg.C_scaffold_5000105\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (495 aa) | trichoplax fixed Word profile block 14 line 130; exact header=CYP3 clan.k e_gw1.5.1057.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (467 aa) | trichoplax fixed Word profile block 15 line 139; exact header=CYP3 clan.L fgeneshTA2_pg.C_scaffold_4000059\|Triad1 4 aa diffs to 3 clan.m | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (502 aa) | trichoplax fixed Word profile block 16 line 148; exact header=CYP3 clan.m e_gw1.4.1014.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (502 aa) | trichoplax fixed Word profile block 17 line 158; exact header=CYP3 clan.n fgeneshTA2_pg.C_scaffold_4000058\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (492 aa) | trichoplax fixed Word profile block 18 line 167; exact header=CYP3 clan.o fgeneshTA2_pg.C_scaffold_3000386\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (495 aa) | trichoplax fixed Word profile block 19 line 176; exact header=CYP3 clan.p fgeneshTA2_pg.C_scaffold_5000089\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (492 aa) | trichoplax fixed Word profile block 20 line 185; exact header=CYP3 clan.q fgeneshTA2_pg.C_scaffold_4000050\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (205 aa) | trichoplax fixed Word profile block 21 line 194; exact header=CYP3 clan.r gw1.251.3.1\|Triad1 C-term frag | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (508 aa) | trichoplax fixed Word profile block 22 line 199; exact header=CYP3 clan.s e_gw1.5.1059.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (491 aa) | trichoplax fixed Word profile block 23 line 208; exact header=CYP3 clan.u e_gw1.5.1052.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (416 aa) | trichoplax fixed Word profile block 24 line 217; exact header=CYP3 clan.v e_gw1.1.1532.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (483 aa) | trichoplax fixed Word profile block 25 line 225; exact header=CYP3 clan.w fgeneshTA2_pg.C_scaffold_5000097\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (494 aa) | trichoplax fixed Word profile block 26 line 234; exact header=CYP3 clan.x e_gw1.5.996.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (503 aa) | trichoplax fixed Word profile block 27 line 243; exact header=CYP3 clan.y fgeneshTA2_pg.C_scaffold_5000103\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (501 aa) | trichoplax fixed Word profile block 28 line 252; exact header=CYP3 clan.z estExt_fgeneshTA2_pg.C_50098\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (492 aa) | trichoplax fixed Word profile block 29 line 261; exact header=CYP3 clan.aa fgeneshTA2_pg.C_scaffold_5000108\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (159 aa) | trichoplax fixed Word profile block 30 line 270; exact header=CYP3 clan.ab e_gw1.251.7.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (504 aa) | trichoplax fixed Word profile block 31 line 274; exact header=CYP3 clan.ac e_gw1.42.7.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (489 aa) | trichoplax fixed Word profile block 32 line 283; exact header=CYP3 clan.ad fgeneshTA2_pg.C_scaffold_42000018\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (491 aa) | trichoplax fixed Word profile block 33 line 292; exact header=CYP3 clan.ae e_gw1.4.1023.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (503 aa) | trichoplax fixed Word profile block 34 line 301; exact header=CYP3 clan.af e_gw1.5.1029.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (492 aa) | trichoplax fixed Word profile block 35 line 310; exact header=CYP3 clan.ag e_gw1.25.20.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (489 aa) | trichoplax fixed Word profile block 36 line 319; exact header=CYP3 clan.ah fgeneshTA2_pg.C_scaffold_5000129\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (503 aa) | trichoplax fixed Word profile block 37 line 328; exact header=CYP3 clan.ai e_gw1.5.986.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (499 aa) | trichoplax fixed Word profile block 38 line 337; exact header=CYP3 clan.aj e_gw1.3.357.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (141 aa) | trichoplax fixed Word profile block 39 line 346; exact header=CYP3 clan.ak e_gw1.251.8.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (461 aa) | trichoplax fixed Word profile block 40 line 350; exact header=CYP3 clan.aL gw1.3.1180.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (474 aa) | trichoplax fixed Word profile block 41 line 358; exact header=CYP3 clan.am gw1.5.1020.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (502 aa) | trichoplax fixed Word profile block 42 line 366; exact header=CYP3 clan.an fgeneshTA2_pg.C_scaffold_5000132\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (464 aa) | trichoplax fixed Word profile block 43 line 375; exact header=CYP3 clan.ao fgeneshTA2_pg.C_scaffold_3000549\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (486 aa) | trichoplax fixed Word profile block 44 line 383; exact header=CYP3 clan.ap fgeneshTA2_pg.C_scaffold_3000222\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (136 aa) | trichoplax fixed Word profile block 45 line 392; exact header=CYP3 clan.aq e_gw1.4.467.1\|Triad1 N-term | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (172 aa) | trichoplax fixed Word profile block 46 line 396; exact header=CYP3 clan.ar gw1.251.4.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (258 aa) | trichoplax fixed Word profile block 47 line 401; exact header=CYP3 clan.as fgeneshTA2_pg.C_scaffold_1000662\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (464 aa) | trichoplax fixed Word profile block 48 line 407; exact header=CYP3 clan.at fgeneshTA2_pm.C_scaffold_3000065\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (503 aa) | trichoplax fixed Word profile block 49 line 415; exact header=CYP3 clan.au fgeneshTA2_pg.C_scaffold_5000098\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP3 | present (491 aa) | trichoplax fixed Word profile block 50 line 424; exact header=CYP3 clan.av e_gw1.5.1033.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (504 aa) | trichoplax fixed Word profile block 51 line 436; exact header=CYP4 clan.a e_gw1.17.191.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (510 aa) | trichoplax fixed Word profile block 52 line 445; exact header=CYP4 clan.b fgeneshTA2_pg.C_scaffold_5000148\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (471 aa) | trichoplax fixed Word profile block 53 line 454; exact header=CYP4 clan.c e_gw1.11.37.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (471 aa) | trichoplax fixed Word profile block 54 line 462; exact header=CYP4 clan.h e_gw1.824.1.1\|Triad1 same seq as CYP4 clan.c (5 aa diffs in heme region) | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (492 aa) | trichoplax fixed Word profile block 55 line 470; exact header=CYP4 clan.d e_gw1.11.340.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (145 aa) | trichoplax fixed Word profile block 56 line 479; exact header=CYP4 clan.e gw1.3.625.1\|Triad1 44% to CYP4V | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (503 aa) | trichoplax fixed Word profile block 57 line 483; exact header=CYP4 clan.f e_gw1.7.637.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (498 aa) | trichoplax fixed Word profile block 58 line 492; exact header=CYP4 clan.g e_gw1.17.36.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (471 aa) | trichoplax fixed Word profile block 59 line 501; exact header=CYP4 clan.h e_gw1.824.1.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (471 aa) | trichoplax fixed Word profile block 60 line 509; exact header=CYP4 clan.j e_gw1.11.38.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (477 aa) | trichoplax fixed Word profile block 61 line 517; exact header=CYP4 clan.L fgeneshTA2_pm.C_scaffold_7000003\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (491 aa) | trichoplax fixed Word profile block 62 line 525; exact header=CYP4 clan.m e_gw1.31.39.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (504 aa) | trichoplax fixed Word profile block 63 line 534; exact header=CYP4 clan.n fgeneshTA2_pg.C_scaffold_2000350\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (529 aa) | trichoplax fixed Word profile block 64 line 543; exact header=CYP4 clan.o fgeneshTA2_pg.C_scaffold_11000176\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (454 aa) | trichoplax fixed Word profile block 65 line 552; exact header=CYP4 clan.p fgeneshTA2_pg.C_scaffold_3000822\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (501 aa) | trichoplax fixed Word profile block 66 line 560; exact header=CYP4 clan.q fgeneshTA2_pg.C_scaffold_17000043\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (517 aa) | trichoplax fixed Word profile block 67 line 569; exact header=CYP4 clan.r fgeneshTA2_pg.C_scaffold_1000685\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (441 aa) | trichoplax fixed Word profile block 68 line 578; exact header=CYP4 clan.s fgeneshTA2_pg.C_scaffold_2000351\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (497 aa) | trichoplax fixed Word profile block 69 line 586; exact header=CYP4 clan.t fgeneshTA2_pg.C_scaffold_2000353\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (186 aa) | trichoplax fixed Word profile block 70 line 595; exact header=CYP4 clan.u e_gw1.190.8.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (496 aa) | trichoplax fixed Word profile block 71 line 600; exact header=CYP4 clan.v e_gw1.17.198.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (412 aa) | trichoplax fixed Word profile block 72 line 609; exact header=CYP4 clan.w fgeneshTA2_pg.C_scaffold_11000066\|Triad1 MASFLLDILTWLSIIVGIAIAYLIKQLISKLVSPLNKIPGLPTWSPLGHLLIIMKEPPGDPYLQWSEQHGGIVRYCFPIY | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (71 aa) | trichoplax fixed Word profile block 73 line 617; exact header=CYP4 clan.x gw1.886.4.1\|Triad1 80% to CYP3 clan.w | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (492 aa) | trichoplax fixed Word profile block 74 line 620; exact header=CYP4 clan.y fgeneshTA2_pg.C_scaffold_11000065\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (136 aa) | trichoplax fixed Word profile block 75 line 629; exact header=CYP4 clan.z gw1.11.172.1\|Triad1 2 aa diffs to CYP4 clan.aa | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (133 aa) | trichoplax fixed Word profile block 76 line 634; exact header=CYP4 clan.aa gw1.886.2.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP4 | present (115 aa) | trichoplax fixed Word profile block 77 line 639; exact header=CYP4 clan.ab gw1.11.89.1\|Triad1 67% to CYP4 clan.y | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP7 | present (448 aa) | trichoplax fixed Word profile block 78 line 646; exact header=CYP7 clan.a e_gw1.5.166.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP7 | present (485 aa) | trichoplax fixed Word profile block 79 line 654; exact header=CYP7 clan.b estExt_fgeneshTA2_pg.C_20554\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| Mito.a | present (460 aa) | trichoplax fixed Word profile block 80 line 665; exact header=Mito.a e_gw1.46.1.1\|Triad1 32% to CYP24, missing N-term | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| gnl\|ti\|1039420953 | present (532 aa) | trichoplax fixed Word profile block 81 line 673; exact header=gnl\|ti\|1039420953 name:AYFC67982.b1 mate:1039419993 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (408 aa) | trichoplax fixed Word profile block 82 line 693; exact header=mito clan.b gw1.5.943.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (496 aa) | trichoplax fixed Word profile block 83 line 701; exact header=mito clan.c e_gw1.5.116.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (405 aa) | trichoplax fixed Word profile block 84 line 710; exact header=mito clan.d fgeneshTA2_pg.C_scaffold_1000187\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (401 aa) | trichoplax fixed Word profile block 85 line 718; exact header=mito clan.e fgeneshTA2_pg.C_scaffold_1000185\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (436 aa) | trichoplax fixed Word profile block 86 line 726; exact header=mito clan.f e_gw1.5.936.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (505 aa) | trichoplax fixed Word profile block 87 line 734; exact header=mito clan.g e_gw1.5.126.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (345 aa) | trichoplax fixed Word profile block 88 line 743; exact header=mito clan.h e_gw1.196.3.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (505 aa) | trichoplax fixed Word profile block 89 line 750; exact header=mito clan.i fgeneshTA2_pg.C_scaffold_5000841\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (486 aa) | trichoplax fixed Word profile block 90 line 759; exact header=mito clan.j fgeneshTA2_pg.C_scaffold_5000877\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (460 aa) | trichoplax fixed Word profile block 91 line 768; exact header=mito clan.k e_gw1.1.212.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (506 aa) | trichoplax fixed Word profile block 92 line 776; exact header=mito clan.L fgeneshTA2_pg.C_scaffold_5000846\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (528 aa) | trichoplax fixed Word profile block 93 line 785; exact header=mito clan.m fgeneshTA2_pg.C_scaffold_5000872\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (447 aa) | trichoplax fixed Word profile block 94 line 794; exact header=mito clan.n estExt_Genewise1Plus.C_10310\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (382 aa) | trichoplax fixed Word profile block 95 line 802; exact header=mito clan.o fgeneshTA2_pg.C_scaffold_5000851\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (420 aa) | trichoplax fixed Word profile block 96 line 809; exact header=mito clan.p e_gw1.196.2.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (520 aa) | trichoplax fixed Word profile block 97 line 817; exact header=mito clan.q fgeneshTA2_pg.C_scaffold_5000821\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (527 aa) | trichoplax fixed Word profile block 98 line 826; exact header=mito clan.r fgeneshTA2_pg.C_scaffold_2000568\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (367 aa) | trichoplax fixed Word profile block 99 line 835; exact header=mito clan.s fgeneshTA2_pg.C_scaffold_5000847\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (406 aa) | trichoplax fixed Word profile block 100 line 842; exact header=mito clan.t gw1.1.1522.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| mito | present (420 aa) | trichoplax fixed Word profile block 101 line 850; exact header=mito clan.u gw1.5.966.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP26 | present (419 aa) | trichoplax fixed Word profile block 102 line 860; exact header=CYP26 clan.a fgeneshTA2_pg.C_scaffold_17000122\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP51.a | present (444 aa) | trichoplax fixed Word profile block 103 line 870; exact header=CYP51.a e_gw1.3.1007.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP51.b | present (445 aa) | trichoplax fixed Word profile block 104 line 878; exact header=CYP51.b e_gw1.3.1097.1\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| CYP74 | present (484 aa) | trichoplax fixed Word profile block 105 line 888; exact header=CYP74 clan.a estExt_fgeneshTA2_pg.C_20552\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| unassigned | present (487 aa) | trichoplax fixed Word profile block 106 line 899; exact header=unassigned 1 fgeneshTA2_pg.C_scaffold_2000560\|Triad1 weak PERF region | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |
+| unassigned | present (234 aa) | trichoplax fixed Word profile block 107 line 909; exact header=unassigned fragment 2 fgeneshTA2_pg.C_scaffold_2000333\|Triad1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/trichoplax.doc |

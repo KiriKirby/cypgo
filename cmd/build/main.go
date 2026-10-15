@@ -95,7 +95,7 @@ func writeAuditSummary(path string, records []record, species []speciesRecord) e
 	var b strings.Builder
 	b.WriteString("# Reviewed Dr. Nelson resource audit\n\n")
 	fmt.Fprintf(&b, "This summary is generated only from completed resource-specific structured inputs. Listed but unfinished resources remain disabled and do not contribute records. No external sequence database is consulted.\n\nListed species/resource entries: %d\n\n| Category | Reviewed PGD records | Literal source sequences |\n|---|---:|---:|\n", len(species))
-	for _, cat := range []string{"animals", "plants", "fungi", "bacteria"} {
+	for _, cat := range []string{"animals", "plants", "fungi", "bacteria", "protists"} {
 		v := counts[cat]
 		fmt.Fprintf(&b, "| %s | %d | %d |\n", cat, v[0], v[1])
 	}
@@ -993,6 +993,9 @@ func write(path string, records []record, manifestSpecies []speciesRecord) error
 		return err
 	}
 	tmp := path + ".tmp"
+	compact := path + ".compact"
+	_ = os.Remove(tmp)
+	_ = os.Remove(compact)
 	db, err := bolt.Open(tmp, 0o644, nil)
 	if err != nil {
 		return err
@@ -1070,5 +1073,32 @@ func write(path string, records []record, manifestSpecies []speciesRecord) error
 		_ = os.Remove(tmp)
 		return err
 	}
-	return os.Rename(tmp, path)
+	// Bolt grows geometrically while inserting tens of thousands of records.
+	// Compacting the completed temporary database keeps the published download
+	// proportional to live data and avoids shipping unused preallocated pages.
+	src, err := bolt.Open(tmp, 0o444, &bolt.Options{ReadOnly: true})
+	if err != nil {
+		_ = os.Remove(tmp)
+		return err
+	}
+	dst, err := bolt.Open(compact, 0o644, nil)
+	if err != nil {
+		_ = src.Close()
+		_ = os.Remove(tmp)
+		return err
+	}
+	err = bolt.Compact(dst, src, 64<<20)
+	closeDst, closeSrc := dst.Close(), src.Close()
+	if err == nil {
+		err = closeDst
+	}
+	if err == nil {
+		err = closeSrc
+	}
+	_ = os.Remove(tmp)
+	if err != nil {
+		_ = os.Remove(compact)
+		return err
+	}
+	return os.Rename(compact, path)
 }

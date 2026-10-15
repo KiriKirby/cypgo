@@ -82,7 +82,9 @@ func TestReviewedPlantResourceCountsAndRepresentativeSequences(t *testing.T) {
 	for _, row := range rows {
 		if row.Category == "protists" {
 			protistRecords++
-			if row.Sequence != "" { protistSequences++ }
+			if row.Sequence != "" {
+				protistSequences++
+			}
 		}
 	}
 	if protistRecords != 15 || protistSequences != 7 {
@@ -199,6 +201,58 @@ func TestReviewedPlantResourceCountsAndRepresentativeSequences(t *testing.T) {
 		if row.ID != expected.id || row.Symbol != expected.symbol || len(row.Sequence) != expected.length || !strings.HasPrefix(row.Sequence, expected.prefix) || !strings.HasSuffix(row.Sequence, expected.suffix) {
 			t.Errorf("representative %s changed: id=%q symbol=%q length=%d", key, row.ID, row.Symbol, len(row.Sequence))
 		}
+	}
+}
+
+func TestReviewedAnimalTotalsAndRepresentativeSequences(t *testing.T) {
+	rows, err := readReviewedSources("../../sources")
+	if err != nil {
+		t.Fatal(err)
+	}
+	byKey := map[string]record{}
+	records, sequences := 0, 0
+	species := map[string]bool{}
+	for _, row := range rows {
+		if row.Category != "animals" {
+			continue
+		}
+		records++
+		if row.Sequence != "" {
+			sequences++
+		}
+		species[row.Species] = true
+		byKey[row.RecordKey] = row
+	}
+	if records != 5408 || sequences != 5368 || len(species) != 113 {
+		t.Fatalf("animals=%d records/%d sequences/%d species, want 5408/5368/113", records, sequences, len(species))
+	}
+	checks := map[string]struct {
+		species, id, prefix, suffix string
+		length                      int
+	}{
+		"c-briggsae:block-0001:line-0024:cyp13a-a":       {"Caenorhabditis briggsae", "CYP13A.a", "MLISAILLGVFT", "VIVKLEPRKDHL", 515},
+		"public-insect:block-0127:line-1042:cyp4g7":      {"Tribolium castaneum", "CYP4G7", "MVVVEESLNHSL", "ADGFRVILTSRT", 534},
+		"nematostella:block-0001:line-0008:xm_001641370": {"Nematostella vectensis", "XM_001641370", "MDRLRDWVSWSS", "IPFGIGHRACAG", 443},
+		"whitefly:block-0078:line-0436:cyp404a1":         {"Trialeurodes vaporariorum", "CYP404A1", "MIVSRRNKAQIS", "PNKPLKVQFIPR", 513},
+		"sponge:block-0019:line-0200:cyp4c":              {"Reniera sp.", "CYP4C", "MIRFCCWQRRLP", "VPIRIKFTPCNQ", 211},
+	}
+	for key, want := range checks {
+		row, ok := byKey[key]
+		if !ok {
+			t.Errorf("missing animal representative %s", key)
+			continue
+		}
+		if row.Species != want.species || row.ID != want.id || len(row.Sequence) != want.length || !strings.HasPrefix(row.Sequence, want.prefix) || !strings.HasSuffix(row.Sequence, want.suffix) {
+			t.Errorf("animal representative %s changed: species=%q id=%q length=%d", key, row.Species, row.ID, len(row.Sequence))
+		}
+	}
+	internal := byKey["c-briggsae:block-0014:line-0177:cyp14a-e"]
+	if !strings.Contains(internal.Sequence, "*") || !strings.Contains(internal.Sequence, "X") {
+		t.Fatalf("C. briggsae source pseudogene markers were lost: %q", internal.Sequence)
+	}
+	empty := byKey["spider-mite:block-0025:line-0234:cyp392b2p"]
+	if empty.ID == "" || empty.Sequence != "" {
+		t.Fatalf("explicit empty pseudogene changed: %#v", empty)
 	}
 }
 

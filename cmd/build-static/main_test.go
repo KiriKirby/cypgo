@@ -120,3 +120,55 @@ func TestSpeciesSlugIsStableAndCollisionResistant(t *testing.T) {
 		t.Fatalf("unexpected slugs: %q %q", a, speciesSlug("Plant-a"))
 	}
 }
+
+func TestStaticTemplatesKeepTableScopedExportAndPrinting(t *testing.T) {
+	root := filepath.Join("..", "..")
+	detail, err := os.ReadFile(filepath.Join(root, "detailtmp.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	detailText := string(detail)
+	for _, required := range []string{
+		`id="details"`,
+		`<script src="xlsx.js"></script>`,
+		`.download=safeName(document.title.replace(/^CYPgo! - /,''))+'.xlsx'`,
+		`activate(print,function(){window.print()})`,
+		`window.close()`,
+		`#details, #details * { visibility: visible !important; }`,
+	} {
+		if !strings.Contains(detailText, required) {
+			t.Fatalf("detail template is missing %q", required)
+		}
+	}
+	if strings.Contains(detailText, `history.back()`) || strings.Contains(detailText, `location.href='index.html'`) {
+		t.Fatal("Close must not navigate away when the browser refuses window.close")
+	}
+
+	index, err := os.ReadFile(filepath.Join(root, "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	indexText := string(index)
+	if !strings.Contains(indexText, `id="search-results-table"`) ||
+		!strings.Contains(indexText, `#search-results-table, #search-results-table * { visibility: visible !important; }`) {
+		t.Fatal("search template does not limit browser printing to the results table")
+	}
+
+	xlsx, err := os.ReadFile(filepath.Join(root, "xlsx.js"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	xlsxText := string(xlsx)
+	for _, required := range []string{
+		`0x04034B50`,
+		`0x02014B50`,
+		`0x06054B50`,
+		`[Content_Types].xml`,
+		`xl/worksheets/sheet1.xml`,
+		`application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`,
+	} {
+		if !strings.Contains(xlsxText, required) {
+			t.Fatalf("xlsx writer is missing %q", required)
+		}
+	}
+}

@@ -1,0 +1,69 @@
+# Bombus terrestris
+
+Category: `animals`
+
+Records: 55
+
+Sequence audit: `55/55` records have an accepted sequence; short records (<100 aa): `1`; unusually long records (>1000 aa): `0`.
+
+Extraction method(s): `reviewed structured record`.
+
+A missing sequence means the current Dr. Nelson resource did not provide an unambiguous protein sequence for this exact record. No external database sequence is substituted.
+
+| CYP / ID | Sequence | Description | Source |
+|---|---|---|---|
+| CYP4G11 ortholog | present (560 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 2; CYP=CYP4G11 ortholog; ID=XP_003399611.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP4G140P | present (257 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 3; CYP=CYP4G140P; ID=XP_012176615.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP4AA1 ortholog | present (509 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 4; CYP=CYP4AA1 ortholog; ID=XP_003396921.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP4AB3 ortholog | present (514 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 5; CYP=CYP4AB3 ortholog; ID=XP_003398964.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP4AV1 ortholog | present (509 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 6; CYP=CYP4AV1 ortholog; ID=XP_003401971.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AQ26 | present (515 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 7; CYP=CYP6AQ26; ID=XP_012170233.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AQ27 | present (515 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 8; CYP=CYP6AQ27; ID=XP_012170232.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AQ28 | present (515 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 9; CYP=CYP6AQ28; ID=XP_003399696.2 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AQ29 | present (515 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 10; CYP=CYP6AQ29; ID=XP_012170229.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AQ30-fragment | present (217 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 11; CYP=CYP6AQ30-fragment; ID=XP_012170646.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AQ31 | present (513 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 12; CYP=CYP6AQ31; ID=XP_012170221.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AQ32-fragment | present (242 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 13; CYP=CYP6AQ32-fragment; ID=XP_012170645.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AQ33 | present (515 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 14; CYP=CYP6AQ33; ID=XP_012175298.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AQ-fragment1 | present (295 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 15; CYP=CYP6AQ-fragment1; ID=XP_003403418.2 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AQ-fragment2 | present (224 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 16; CYP=CYP6AQ-fragment2; ID=XP_003403397.2 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS19 ortholog | present (503 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 17; CYP=CYP6AS19 ortholog; ID=XP_003395878.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS7 ortholog | present (501 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 18; CYP=CYP6AS7 ortholog; ID=XP_003400119.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS77 | present (501 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 19; CYP=CYP6AS77; ID=XP_012170855.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS5 ortholog | present (499 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 20; CYP=CYP6AS5 ortholog; ID=XP_003400124.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS12 ortholog | present (495 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 21; CYP=CYP6AS12 ortholog; ID=XP_003400128.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS76 | present (500 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 22; CYP=CYP6AS76; ID=XP_003400126.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS75 | present (499 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 23; CYP=CYP6AS75; ID=XP_003400129.2b | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS74 | present (504 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 24; CYP=CYP6AS74; ID=XP_003400129.2a | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS73 | present (499 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 25; CYP=CYP6AS73; ID=XP_012170859.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS72 | present (501 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 26; CYP=CYP6AS72; ID=XP_012170858.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS13 ortholog | present (500 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 27; CYP=CYP6AS13 ortholog; ID=XP_012170860.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6AS10 ortholog | present (499 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 28; CYP=CYP6AS10 ortholog; ID=XP_012170861.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6BC1 ortholog | present (515 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 29; CYP=CYP6BC1 ortholog; ID=XP_003399050.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6BD1 ortholog | present (499 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 30; CYP=CYP6BD1 ortholog; ID=XP_012176083.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP6BE1 ortholog | present (512 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 31; CYP=CYP6BE1 ortholog; ID=XP_003398646.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP9P1 ortholog | present (512 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 32; CYP=CYP9P1 ortholog; ID=XP_003393389.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP9P2 | present (516 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 33; CYP=CYP9P2; ID=XP_003393388.2 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP9Q4 | present (524 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 34; CYP=CYP9Q4; ID=XP_003393377.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP9Q5 | present (525 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 35; CYP=CYP9Q5; ID=XP_003393376.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP9Q6 | present (506 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 36; CYP=CYP9Q6; ID=XP_012167955.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP9R1 | present (533 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 37; CYP=CYP9R1; ID=XP_003393379.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP9S1P ortholog | present (503 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 38; CYP=CYP9S1P ortholog; ID=XP_012175219.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP15A1 | present (504 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 39; CYP=CYP15A1; ID=XP_003396707.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP18A1 | present (539 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 40; CYP=CYP18A1; ID=XP_003400174.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP301A1 | present (528 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 41; CYP=CYP301A1; ID=XP_012164771.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP301B1 | present (516 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 42; CYP=CYP301B1; ID=XP_012164770.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP302A1 | present (530 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 43; CYP=CYP302A1; ID=XP_012176668.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP303A1 | present (562 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 44; CYP=CYP303A1; ID=XP_003397002.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP305D1 | present (490 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 45; CYP=CYP305D1; ID=XP_003396668.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP306A1 | present (499 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 46; CYP=CYP306A1; ID=XP_012170924.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP307B1 | present (504 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 47; CYP=CYP307B1; ID=XP_003400661.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP314A1 | present (532 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 48; CYP=CYP314A1; ID=XP_012164110.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP315A1 | present (537 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 49; CYP=CYP315A1; ID=XP_003394612.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP334A1 | present (612 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 50; CYP=CYP334A1; ID=XP_003397788.2 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP336A22 | present (496 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 51; CYP=CYP336A22; ID=XP_012175522.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP336A23 | present (496 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 52; CYP=CYP336A23; ID=XP_003393865.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP336A24 | present (496 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 53; CYP=CYP336A24; ID=XP_003393867.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP336A25 | present (496 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 54; CYP=CYP336A25; ID=XP_003393866.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP343A1P ortholog | present (59 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 55; CYP=CYP343A1P ortholog; ID=CYP343A1P ortholog | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
+| CYP369A1 | present (503 aa) | Bombus terrestris authoritative sheet "reduced set (dups removed)" row 56; CYP=CYP369A1; ID=XP_003397349.1 | https://drnelson.uthsc.edu/wp-content/uploads/sites/130/resources/Bombus.terrestris.P450s.xlsx |
